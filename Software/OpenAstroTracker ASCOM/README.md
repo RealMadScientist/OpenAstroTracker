@@ -1,4 +1,4 @@
-OpenAstroTracker ASCOM driver 0.1.4.2b : 2020-04-20
+OpenAstroTracker ASCOM driver 0.2.0.0b : 2020-04-23
 
 This driver is still in a great deal of flux.  Capacitor levels of flux.  Use at your own risk!
 
@@ -9,10 +9,11 @@ This driver is still in a great deal of flux.  Capacitor levels of flux.  Use at
 										BUGFIX : Uninstaller was not correctly removing previous driver DLL
 	* 0.1.4.1b	2020-04-18		:		BUGFIX : Driver not correctly handling return value from Halt
 	* 0.1.4.2b	2020-04-20		:		CHANGE : Driver uses :CM LX200 Protocol command to sync
+	* 0.2.0.0b	2020-04-20		:		CHANGE : Local Server version of driver, first release
 										
 * Arduino information
 	* Tested on Arduino Uno.  No other variants of Arduino have been tested.
-	* Currently built for Version V1.6.29 and above of the Arduino Code (As of 2020-04-20)
+	* Currently built for Version V1.6.32 and above of the Arduino Code (As of 2020-04-23)
 	* Uncomment #define SUPPORT_SERIAL_CONTROL in Globals.h
 	* Leave #define DEBUG_MODE in Globals.h commented.
 	
@@ -20,13 +21,9 @@ This driver is still in a great deal of flux.  Capacitor levels of flux.  Use at
 	* Documented in included spreadsheet
 	* Note : Implementation of a property does not mean it "does stuff", merely that it will return a value instead of an exception.  The value may never change.
 
-* Last Conformance Test - 2020-04-18
+* Last Conformance Test - 2020-04-13
 
 * Cautions and warnings
-	* WARNING : DO NOT BUILD THIS DRIVER ON THE SAME MACHINE YOU INTEND TO USE IT ON.
-		* There is a known issue with a "LoadFromContext Exception" with at least one client software.  This will PREVENT use of the driver in that software if you build on that machine.
-		* The issue has been asked about here https://ascomtalk.groups.io/g/Developer/topic/loadfromcontext_exception/72971681?p=,,,20,0,0,0::recentpostdate%2Fsticky,,,20,2,0,72971681
-		* issue #21 in ClutchplateDude/OpenAstroTracker on github
 	* CAUTION : Neither the mount nor the driver currently support setting any slew limits.  Thus it is quite possible the mount may be told to slew to a position that causes a crash
 				with some gadget you've printed and added, or results in an untennable position for your camera, or any number of other "Bad Things (tm)".  So...keep track of your own towel.
 
@@ -38,5 +35,5 @@ This driver is still in a great deal of flux.  Capacitor levels of flux.  Use at
 		* You are welcome to play with the PC Control code included in "OAT PC Control" in this branch, but be aware it's not ready for prime time yet.
 	* Implementation of AltAz methods and properties
 	* Ability to set home position of mount via ASCOM
-	* ASCOM local server wrapper (Need help!)
+
 	
