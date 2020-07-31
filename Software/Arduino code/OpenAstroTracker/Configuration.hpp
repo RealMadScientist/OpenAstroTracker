@@ -1,11 +1,12 @@
 #pragma once
-#include "Configuration_adv.hpp"   // <-- ignore these
+#include "Configuration_adv.hpp"   // <-- 
+#include "Configuration_pins.hpp"  // <-- ignore these
 /*
   =======================================================================================================================================
 
     Version 1.7
 
-    1. Connect your Arduino, under tools choose "Arduino Uno", set the right Port and set "Arduino ISP" as the Programmer.
+    1. Connect your Arduino, under tools choose the board youre using (e.g. Arduino Mega), set the right Port and set "Arduino ISP" as the Programmer.
     2. Hit upload (Ctrl-U)
 
     You might need to download the "AccelStepper" library by Mike McCauley
@@ -17,7 +18,7 @@
   =======================================================================================================================================
 */
 
-String version = "V1.7.21b";
+String version = "V1.7.23b";
 
 ///////////////////////////////////////////////////////////////////////////
 // Also use Configuration_adv for further adjustments!
@@ -37,7 +38,7 @@ int RAPulleyTeeth = 16;
 // the Circumference of the RA wheel.  V1 = 1057.1  |  V2 = 1131 
 float RACircumference = 1131.0;
 
-int RAspeed = 800;          // You can change the speed and acceleration of the steppers here. Max. Speed = 600. 
+int RAspeed = 1200;          // You can change the speed and acceleration of the steppers here. Max. Speed = 600. 
 int RAacceleration = 6000;   // High speeds tend to make these cheap steppers unprecice
 
 ///////////////////////////////////////////////////////////////////////////
@@ -48,7 +49,7 @@ float DECStepsPerRevolution = 400;   // 28BYJ-48 = 4096  |  NEMA 0.9° = 400  | 
 
 // Your DEC pulley tooth count:
 int DecPulleyTeeth = 16;
-float DEC_Circumference = 568.5;
+float DEC_Circumference = 565.5;
 
 int DECspeed = 1500;           // You can change the speed and acceleration of the steppers here. Max. Speed = 600. 
 int DECacceleration = 6000;    // High speeds tend to make these cheap steppers unprecice
