@@ -1,3 +1,4 @@
+#if USE_GPS == 1
 #include "Sidereal.hpp"
 
 // Constants for sidereal calculation       
@@ -10,10 +11,13 @@
 
 static DayTime Sidereal::calculateByGPS(TinyGPSPlus* gps){
     DayTime timeUTC = DayTime(gps->time.hour(), gps->time.minute(), gps->time.second());
+    //DayTime timeUTC = DayTime(14, 24, 11);
     int deltaJd = calculateDeltaJd(gps->date.year(), gps->date.month(), gps->date.day());
+    //int deltaJd = calculateDeltaJd(2020, 7, 15);
     double deltaJ = deltaJd + ((timeUTC.getTotalHours()) / 24.0);
     return DayTime((float)(calculateTheta(deltaJ, gps->location.lng(), timeUTC.getTotalHours()) / 15.0));
-}
+    //return DayTime((float)(calculateTheta(deltaJ, 8.487581, timeUTC.getTotalHours()) / 15.0));
+    }
 
 static const double Sidereal::calculateTheta(double deltaJ, double longitude, float timeUTC){
     double theta = C1;
@@ -42,3 +46,5 @@ static const int Sidereal::calculateDeltaJd(int year, int month, int day){
     deltaJd -= J2000 / 4 - J2000 / 100 + J2000 / 400;
     return deltaJd; 
 }
+
+#endif // USE_GPS
