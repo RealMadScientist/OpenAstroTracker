@@ -1,0 +1,4029 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="An astrophotography suite designed for all DSO imagers.">
+      
+      
+        <meta name="author" content="N.I.N.A. contributors">
+      
+      
+        <link rel="canonical" href="https://www.nighttime-imaging.eu/advanced/autofocus.html">
+      
+      
+        <link rel="prev" href="../sequencer/advanced/simpletoadvanced.html">
+      
+      
+        <link rel="next" href="meridianflip.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Auto-Focus - Nighttime Imaging 'N' Astronomy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Nighttime Imaging &#39;N&#39; Astronomy" class="md-header__button md-logo" aria-label="Nighttime Imaging 'N' Astronomy" data-md-component="logo">
+      
+  <img src="../images/nina-icon.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Nighttime Imaging 'N' Astronomy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Auto-Focus
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/isbeorn/nina/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Nighttime Imaging &#39;N&#39; Astronomy" class="md-nav__button md-logo" aria-label="Nighttime Imaging 'N' Astronomy" data-md-component="logo">
+      
+  <img src="../images/nina-icon.png" alt="logo">
+
+    </a>
+    Nighttime Imaging 'N' Astronomy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/isbeorn/nina/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../requirements.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Requirements
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tabs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tabs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/equipment.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_2" id="__nav_1_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipment
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Equipment
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/camera.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/filterwheel.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Filterwheel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/focuser.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Focuser
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/rotator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Rotator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/telescope.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Telescope
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/guider.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guider
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/switch.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Switch
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/flatpanel.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flat Panel
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/weather.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Weather
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/dome.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/equipment/safetymonitor.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SafetyMonitor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/skyatlas.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sky Atlas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/framing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/flatwizard.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flat Wizard
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/sequencer.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sequencer
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/imaging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imaging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_8" id="__nav_1_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Options
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Options
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/general.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/equipment.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Equipment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/autofocus.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Autofocus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/dome.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/imaging.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Imaging
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/options/platesolving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plate Solving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_3_9" id="__nav_1_3_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Plugins
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/plugins/installed.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Installed
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tabs/plugins/available.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Available
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sequencer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Sequencer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/overview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4_2" id="__nav_1_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Legacy Sequencer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Legacy Sequencer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/simple/simple.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/simple/sequencing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Sequencing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4_3" id="__nav_1_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Sequencer
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Sequencer
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/advanced/advanced.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/advanced/instructions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Instructions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/advanced/conditions.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Loop Conditions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/advanced/triggers.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Triggers
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sequencer/advanced/simpletoadvanced.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    From Legacy To Advanced
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Topics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Advanced Topics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auto-Focus
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="autofocus.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Auto-Focus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nina-autofocus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N.I.N.A. Autofocus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="N.I.N.A. Autofocus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#star-hfr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star HFR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrast Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determining-ideal-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining ideal parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Determining ideal parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-focus-initial-offset-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Focus Initial Offset Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-focus-step-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Focus Step Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-auto-focus-exposure-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Auto Focus Exposure Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-filterwheel-offsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use FilterWheel Offsets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important considerations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autostretch-factor-and-black-point-clipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autostretch factor and Black point clipping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debayer-image-debayered-hfr-and-unlinked-stretch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debayer Image, Debayered HFR and Unlinked Stretch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Reduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-auto-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Launching Auto-Focus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#af-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-disable-guiding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Disable Guiding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-curve-fitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Curve Fitting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focuser-settle-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focuser Settle Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-number-of-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Number of attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-number-of-frames-per-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Number of Frames per point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-brightest-n-stars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Brightest n Stars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-inner-crop-ratio-and-af-outer-crop-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Inner Crop Ratio and AF Outer Crop Ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backlash
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backlash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifying backlash
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compensating-backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compensating backlash
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Binning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus Filter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus Logs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="meridianflip.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Automated Meridian Flip
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="camerasimulator.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Camera Simulator
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="bulbshutter.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bulb Shutter Control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="dithering.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dithering
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="backlashmeasurement.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Focuser Backlash Measurement
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="framingassistant.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Framing Assistant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5_8" id="__nav_1_5_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    File Formats
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_5_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    File Formats
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="file_formats/tiff.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TIFF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="file_formats/fits.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FITS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="file_formats/xisf.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    XISF
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guiding.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Guiding
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="platesolving.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plate Solving
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_6" id="__nav_1_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Troubleshooting
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/general.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    General
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ascom_connection_issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ASCOM Connection Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/ioptron.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    iOptron Mount Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/eqmod.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EQMOD Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/altair_dualgain.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Altair Dual Gain
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/planetarium.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Planetarium Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/qhy_driver_update.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QHY Driver
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/render_issues.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Display Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/folder_browser_only_desktop.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Folder browser only showing desktop
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../license.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    License
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3rd-party-license.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3rd-Party-Licenses
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Quick Start
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/uioverview.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UI Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/equipment.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Connecting Your Equipment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/settings.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Finalizing Settings
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/focusing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Focusing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/sequence.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Starting a Sequence
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Contributing
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Contributing
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/contributing.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Enhance documentation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/howtosetupdev.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    How to setup the development environment
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/localization.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Localization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/plugins.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plugins
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/ecosystem.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ecosystem
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Requirements
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nina-autofocus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        N.I.N.A. Autofocus
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="N.I.N.A. Autofocus">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#star-hfr" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star HFR
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contrast Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-algorithm" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus algorithm
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#determining-ideal-parameters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Determining ideal parameters
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Determining ideal parameters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-focus-initial-offset-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Focus Initial Offset Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#auto-focus-step-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto Focus Step Size
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#default-auto-focus-exposure-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default Auto Focus Exposure Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-filterwheel-offsets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use FilterWheel Offsets
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#important-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important considerations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Important considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#autostretch-factor-and-black-point-clipping" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autostretch factor and Black point clipping
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debayer-image-debayered-hfr-and-unlinked-stretch" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Debayer Image, Debayered HFR and Unlinked Stretch
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#star-sensitivity" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Star Sensitivity
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#noise-reduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Noise Reduction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-auto-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Launching Auto-Focus
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Options
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#af-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-disable-guiding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Disable Guiding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-curve-fitting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Curve Fitting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#focuser-settle-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Focuser Settle Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-number-of-attempts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Number of attempts
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-number-of-frames-per-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Number of Frames per point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-brightest-n-stars" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Brightest n Stars
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#af-inner-crop-ratio-and-af-outer-crop-ratio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        AF Inner Crop Ratio and AF Outer Crop Ratio
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backlash
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Backlash">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identifying-backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifying backlash
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#compensating-backlash" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Compensating backlash
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#binning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Binning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus Filter
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auto-focus-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Focus Logs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Auto-Focus</h1>
+
+<h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
+<p>Proper focusing is a critical part of astro-imaging. Poor focus will yield softer images and lower SNR. As such it is common for imagers to focus with precision tools such as a Bahtinov mask prior to imaging.
+However, most optical assemblies will suffer from focus shift throughout the night whether it be because of temperature shift or other causes. Additionally, the popularity of monochrome sensors used together with narrowband or broadband filters has led to the need to refocus between filters, due to the slight focus shifts introduced.
+There is therefore a need for automated focusing procedures which can run at the beginning of a sequence, but also throughout the night.</p>
+<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h2>
+<p>For Auto-Focus to be available for use in N.I.N.A. the following must be available and connected via the Equipment tab:</p>
+<ul>
+<li>An ASCOM compatible autofocuser with absolute positioning, properly set up to make sure it has minimal backlash and minimal slippage.</li>
+<li>A camera that is using the imaging train to which the autofocuser is connected.</li>
+</ul>
+<h2 id="nina-autofocus">N.I.N.A. Autofocus<a class="headerlink" href="#nina-autofocus" title="Permanent link">#</a></h2>
+<p>N.I.N.A. is unique in that provides multiple ways to autofocus on star fields, on bright objects such as the moon or planets, or on terrestrial objects. This is done using two methods to measure how far from focus an image is.</p>
+<h3 id="star-hfr">Star HFR<a class="headerlink" href="#star-hfr" title="Permanent link">#</a></h3>
+<p>With this method, N.I.N.A. will move far out of focus, take an exposure, detect the stars in the image, compute the Half Flux Radius (HFR) of the stars and take the average HFR across the frame. Then, moving the focuser by some defined amount (the Auto Focus Step Size), N.I.N.A. can repeat the process, until a nice focus curve is available, and the minimum (point of best focus) can be found by different types of fitting (trend lines, hyperbolic, or parabolic). The obtained curve is as the below.</p>
+<p><img alt="Autofocus Curve Example - Star HFR" src="../images/advanced/autofocuscurve1.png" /></p>
+<p>Each of the focus points above represents the HFR at its respective focus position. In addition, the red bars on each point represent the potential error on each of the focus points - wind and other factors can cause this error to be large. The line and curve fitting used to find best focus make use of those errors to take into account points with smaller error more than points with bigger error. The routine is therefore resistant to noise and other factors such as wind.</p>
+<p>Note however that for Star HFR measurement to work, stars must be detected in the field of view - as such, the routine will have issues with short exposures and far from focus, where out of focus stars will tend to be very large. The Auto-Focus Exposure time is therefore an important parameter to the autofocus routine.</p>
+<p>It is also important to note that if the N.I.N.A Step Size were too big (in the above example we can see it is equal to 10 focuser steps), the curve could become too coarse to be analyzed. The N.I.N.A Step Size therefore needs to be selected judiciously.</p>
+<h3 id="contrast-detection">Contrast Detection<a class="headerlink" href="#contrast-detection" title="Permanent link">#</a></h3>
+<p>A second method is to detect the contrast available in the image - in the same way that a smartphone or mirrorless camera does to perform autofocus. The focuser is moved per the Auto Focus Step Size, exposures are taken per the Auto-Focus exposure time, and contrast is measured via different techniques. The curve obtained is close to a Gaussian Curve, where the maximum of the curve is the point of highest contrast and therefore best focus. An example would be as per the below.</p>
+<p><img alt="Autofocus Curve Example - Contrast Detection" src="../images/advanced/autofocuscurve2.png" /></p>
+<p>As is visible on the image, N.I.N.A. fits a Gaussian Curve to the focus points to find the maximum, the point of best contrast. Because this method doesn't rely on detecting stars, it can use very short exposures, and use up very little computing time - this makes it good for very quick focus. Note however that the peak can be quite narrow and would be easy to miss entirely - as such the Auto Focus Step Size would need to be narrower than with the Star HFR technique. Getting more points near best focus is also recommended.
+Since this method uses contrast detection, it will also work on the Moon, solar system objects, or terrestrial objects. However it can be more sensitive to adverse conditions than the Star HFR method, and is still currently experimental.</p>
+<p>Please note that both methods above assume that the focus is reasonably near to best focus at the start - please make sure that stars are decently small before launching the routine.</p>
+<h2 id="basic-settings">Basic Settings<a class="headerlink" href="#basic-settings" title="Permanent link">#</a></h2>
+<p>The main settings for autofocus are under Options -&gt; Equipment -&gt; Focuser section.</p>
+<p><img alt="Autofocus Curve Basic Settings" src="../images/advanced/autofocusbasicsettings.png" /></p>
+<p>As we have seen above, the two main parameters to successful auto-focus are here:</p>
+<ul>
+<li>Default Auto Focus Exposure Time (in seconds)</li>
+<li>Auto Focus Step Size (in focuser steps)</li>
+</ul>
+<p>Some additional parameters are available:</p>
+<ul>
+<li>Auto Focus Initial Offset Steps (in N.I.N.A. Auto Focus Steps Sizes, and not focuser steps)</li>
+<li>Use FilterWheel Offsets (which does not directly affect auto-focus)</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Default Auto Focus Exposure Time won't be used if a filter wheel is connected, and Auto Focus Exposure Times have been set up in the Filter wheel section of the Options -&gt; Equipment view. Instead, the per-filter exposure times will be used depending on the filter set at the time. This can be very convenient for imagers doing both broadband and narrowband (such as HaRGB). More details on how to set this up are available in the <a href="../tabs/options/equipment.html#filter-wheel-configuration">Equipment Options Section</a>.</p>
+</div>
+<h2 id="auto-focus-algorithm">Auto-Focus algorithm<a class="headerlink" href="#auto-focus-algorithm" title="Permanent link">#</a></h2>
+<p>The autofocus logic is as follows:</p>
+<ol>
+<li>For Star HFR, N.I.N.A. takes an exposure at current focuser position, and computes the Star HFR. This will be the "benchmark to beat", and the final focus point will be checked against this benchmark to ensure better focus has been achieved.</li>
+<li>Move the focuser outwards (to a higher focuser position value than current) by <em>Auto Focus Initial Offset Steps</em> multiplied by <em>Auto Focus Step Size</em>. In the above example, the focuser would be moved by 5 * 10 = 50 focuser steps to the right.</li>
+<li>Start moving the focuser inwards (to lower focuser position values), one <em>Auto Focus Step Size</em> (e.g. 10 focuser steps in the above example) at a time, measuring the contrast or HFR at each step.</li>
+<li>Keep moving inwards until it has found a minimum (for HFR) or maximum (for Contrast) point, and at least <em>Auto Focus Initial Offset Steps</em> (5 in this example) points on each side of that minimum or maximum. If N.I.N.A. finds that it doesn't have enough focus points to the right of the minimum/maximum, it will move back outwards to the rightmost point, then proceed again, one <em>Auto Focus Step Size</em> at a time, until it has enough points right of the minimum/maximum as well</li>
+<li>Perform a fitting on the points (trend lines, parabolic, hyperbolic, or Gaussian) to find the point of best focus, and moves the focuser to it.</li>
+<li>For Star HFR, a final validation exposure is taken, the HFR computed, and compared to the benchmark taken in Step 1. If the final HFR is worse than the initial HFR by 15% or more, the autofocus routine is deemed a failure and the focuser returns to its initial focus position, or an additional auto-focus run is attempted.</li>
+</ol>
+<h2 id="determining-ideal-parameters">Determining ideal parameters<a class="headerlink" href="#determining-ideal-parameters" title="Permanent link">#</a></h2>
+<p>As we have seen, there are three important parameters that are used in the autofocus algorithm. It is time to set them up properly - a rule of thumb is as below.</p>
+<h3 id="auto-focus-initial-offset-steps">Auto Focus Initial Offset Steps<a class="headerlink" href="#auto-focus-initial-offset-steps" title="Permanent link">#</a></h3>
+<p>This is typically good at the default value of 4 for Star HFR. For contrast measurement, a value of 6 is preferable.</p>
+<h3 id="auto-focus-step-size">Auto Focus Step Size<a class="headerlink" href="#auto-focus-step-size" title="Permanent link">#</a></h3>
+<p>To determine the correct Auto Focus Step Size, a user could start with the focuser slightly out of focus outwards from best focus. Then move the focuser outwards by say 10 steps. If there an obvious difference to the eye, and the star diameter has increased by around 20-30% or so, this is likely a right step size. 
+Another method is the following: starting from a good focus position (e.g. by focusing with a Bahtinov mask) the user can progressively move the focuser inward (or outward) until N.I.N.A. is not able to determine stars HFR in the image. The total increment represents the maximum initial offset. To be on the safe side the user can take 80% of the max initial offset and divide it by the <em>Auto Focus Initial Offset Steps</em> (default = 4). The resulting value represents a good Auto Focus Step size. <a href="../tabs/imaging.html">Star HFR</a> detection and <a href="../tabs/options/imaging.html">Annotate Image</a> must be turned ON during the process.</p>
+<blockquote>
+<p>Example: assuming a starting point of good focus of 4000 steps, we will move the focuser outward by an amount of 10 steps at the time, and take a new exposure at the end of each increment to check the measured HFR. Let's say that after 12 moves (120 focuser steps) no or just a couple of very defocused stars will still be detected by N.I.N.A. The value of 120 steps will therefore represent be the max increment. Scaling it by 80% (roughly 100) and dividing it by the Initial Offset (4) will give us an <em>Auto Focus Step Size</em> of 25.</p>
+</blockquote>
+<p>Otherwise, the user should keep experimenting until they find a step size that shifts the focus by the right amount.</p>
+<p>The above Step Size (in focuser steps) will be correct for Star HFR measurement. For contrast measurement based on Sobel or Laplace methods, this should also work fine. For Statistics-based contrast measurement, it may be appropriate to divide the Step Size by 2 or 3 and use that (as we saw in the previous example, the peak in that case is quite narrow).</p>
+<h3 id="default-auto-focus-exposure-time">Default Auto Focus Exposure Time<a class="headerlink" href="#default-auto-focus-exposure-time" title="Permanent link">#</a></h3>
+<p>Under Options -&gt; Imaging -&gt; Image Options, set the "Annotate Image" parameter to On.</p>
+<p>For your filter of interest, take an exposure near best focus on an area with many stars. An ideal exposure time for Star HFR  would be an exposure that almost saturates the brightest stars, but keeps the majority under the saturation threshold. The stars should be easily visible and identifiable to you. Now enable the Star icon (HFR measurement) on the Image pane of the Imaging tab - N.I.N.A. will highlight the detected stars. If many stars are detected, this exposure time is likely fine.</p>
+<p>Then, move the focuser out of focus, by the <em>Auto Focus Initial Offset Steps</em> multiplied by <em>Auto Focus Step Size</em>. Take a frame with the same exposure time, and check that some of the out of focus shapes are still quite bright, with some very obvious borders. Again, using the Star icon, have N.I.N.A. highlight the detected stars - are some of the brightest stars correctly detected? If so, you have the right exposure time.</p>
+<p>If both of the above are OK, you have found the correct default auto-focus exposure time for Star HFR. Note that this can change depending on your Imaging Auto-Stretch Settings. If you find that you have problems detecting stars far out of focus, you may want to increase the exposure time, and potentially decrease your Auto Stretch Factor.</p>
+<p>Note that for contrast detection methods, it is generally safe to use an exposure time that is shorter than the one used for Star HFR.</p>
+<h3 id="use-filterwheel-offsets">Use FilterWheel Offsets<a class="headerlink" href="#use-filterwheel-offsets" title="Permanent link">#</a></h3>
+<p>Even par focal filters can cause small changes to focus, due to the filter itself, or the optical system and how it deals with different light wavelengths. As such it is possible to set offsets, in focuser steps, for each filter relative to one another. If a filter wheel is used, and offsets are properly defined per filter, this setting should be turned on. Otherwise, it should be kept off. This setting doesn't affect autofocus directly, unless an Auto-Focus filter is set. Defining filter offsets is further explained in the <a href="../tabs/options/equipment.html#filter-wheel-configuration">Equipment Options Section</a>.</p>
+<h2 id="important-considerations">Important considerations<a class="headerlink" href="#important-considerations" title="Permanent link">#</a></h2>
+<p>The basic parameters above should provide good auto-focus. The star HFR measurement and contrast detection calculation are however affected by other settings, which are located under Options -&gt; Imaging -&gt; Image Options</p>
+<p><img alt="Autofocus Curve Basic Settings" src="../images/advanced/imageoptions.png" /></p>
+<h3 id="autostretch-factor-and-black-point-clipping">Autostretch factor and Black point clipping<a class="headerlink" href="#autostretch-factor-and-black-point-clipping" title="Permanent link">#</a></h3>
+<p>These settings are used for stretching images automatically so that the target features are visible by human eyes. The stretch factor determines how bright the image becomes (the higher the brighter), and the black clipping determines whether some of the background should be clipped to black, increasing contrast.</p>
+<p>Some of the routines used by autofocus use the stretched images as well (for edge detection for example), and are thus affected by this setting. This includes:</p>
+<ul>
+<li>StarHFR routine: stars are detected based on the stretched image</li>
+<li>Contrast Detection routine, with the Sobel and Laplace measurement methods: contrast is measured on the stretched image</li>
+</ul>
+<p>In light polluted conditions, if running into issues, it may be worth trying to lower the stretch ratio to values such as 0.1 and the clipping to values such as -2. This will depend on each observer's conditions however, and each user needs to find out their best settings using the techniques highlighted above.</p>
+<h3 id="debayer-image-debayered-hfr-and-unlinked-stretch">Debayer Image, Debayered HFR and Unlinked Stretch<a class="headerlink" href="#debayer-image-debayered-hfr-and-unlinked-stretch" title="Permanent link">#</a></h3>
+<p>The recommended (and default) value for these parameters is On.</p>
+<p>The Debayer setting is for OSC (one shot color) cameras, and will be ignored for monochrome cameras. If enabled, the sensor data (which is monochrome at this stage) will be debayered into a color image and displayed as such in N.I.N.A. In addition, if Unlinked Stretch is set to On, when stretching the image each color channel will be stretched separately, according to its own statistics. This helps achieve images with higher contrast, so it is recommended to keep this On, unless the computer used for capture is very slow.</p>
+<p>Since, just as described above, many autofocus measurement methods depend on the stretched image, having this parameter correctly set will help with autofocus. Generally, it is better to leave these set to On.</p>
+<p>Similarly, the Debayered HFR option provides a better way to perform HFR calculation when set to On. If set to off, the Bayered sensor data will be used for Star HFR calculation, which can lead to small focus error.</p>
+<h3 id="star-sensitivity">Star Sensitivity<a class="headerlink" href="#star-sensitivity" title="Permanent link">#</a></h3>
+<p>Star sensitivity is a parameter that takes effect during Star Detection, and therefore affects the Star HFR autofocus methodology. More aggressive settings will typically detect more stars, but will become more sensitive to noise as a result, which could lead to miss detecting stars. With the Annotate Stars setting set to On it is possible for the user to see the effects of this setting both in and out of focus. Typically, a value of Normal or High will provide good results.</p>
+<p>As making this parameter more aggressive increases noise sensitivity, it can be used efficiently with the Noise Reduction parameter described below.</p>
+<h3 id="noise-reduction">Noise Reduction<a class="headerlink" href="#noise-reduction" title="Permanent link">#</a></h3>
+<p>This parameter determines how noise reduction is applied on the image prior to star detection, or some of the methods of contrast detections (Sobel and Laplace). It is only effective on the following autofocus methods:</p>
+<ul>
+<li>StarHFR routine</li>
+<li>Contrast Detection routine, with the Sobel and Laplace measurement methods</li>
+</ul>
+<p>The possible values are as below:</p>
+<ul>
+<li>None: no additional noise reduction is applied prior to star detection or contrast measurement</li>
+<li>Median: a 3x3 Median filter is applied on the full size image prior to star or contrast detection. This is extremely effective at getting rid of hot pixels (which could be recognized as stars), but adds some processing time</li>
+<li>Normal: A Gaussian smoothing is applied to the image prior to star or contrast detection. This is effective at reducing thermal noise. Processing time impact is minimum, but detectable.</li>
+<li>High: A stronger Gaussian smoothing is applied to the image</li>
+<li>Highest: An even stronger Gaussian smoothing is applied to the image</li>
+</ul>
+<p>Noise reduction can be very effective when combined with star sensitivity settings - but which values are ideal depend on each user's setup. Good results have been found with Star Sensitivity Normal or High and Noise Reduction Normal.</p>
+<h2 id="launching-auto-focus">Launching Auto-Focus<a class="headerlink" href="#launching-auto-focus" title="Permanent link">#</a></h2>
+<p>Now that the basic settings of the autofocus routine have been set, it is time to launch an autofocus run. Of course, prior to doing that, the telescope should be pointed to the night sky, and tracking. There are multiple ways to do this:</p>
+<ul>
+<li>Start autofocus manually, from the Imaging tab. To make sure the autofocus window is available, the top right AF button needs to be clicked first. That should create a tab in the imaging pane.</li>
+</ul>
+<p><img alt="Launching Auto Focus" src="../images/advanced/LaunchingAutoFocus.png" /></p>
+<p>If both camera and focuser are properly connected, the "Start Autofocus" button will be available, and clicking it will launch the routine, as described in <a href="#nina-autofocus">the introduction section</a>.</p>
+<ul>
+<li>Start autofocus as part of an imaging sequence (at start, after a certain number of frames, after a user-defined time, after worsening of HFR, etc.). This can be configured from the sequence tab, and is described in more details in the relevant <a href="../tabs/sequencer.html">Sequence Section</a></li>
+</ul>
+<h2 id="advanced-options">Advanced Options<a class="headerlink" href="#advanced-options" title="Permanent link">#</a></h2>
+<p>Under the Focuser options, there are a range of advanced options that will affect autofocus. The available options are different depending on the focus methodology being used. See <a href="../tabs/options/equipment.html">Options-&gt;Equipment</a> for further details.</p>
+<p><img alt="AF Advanced" src="../images/advanced/AF_advanced10.PNG" /></p>
+<h3 id="af-method">AF Method<a class="headerlink" href="#af-method" title="Permanent link">#</a></h3>
+<p>The method used for autofocus. This is either Star HFR or Contrast Detection, both of which have been described in this document. Default is Star HFR.</p>
+<h3 id="af-disable-guiding">AF Disable Guiding<a class="headerlink" href="#af-disable-guiding" title="Permanent link">#</a></h3>
+<p>Determines whether guiding should be disabled when autofocusing. For OAG or belt focuser users, it may be better to have this option set to On. Otherwise, it can be set to Off.</p>
+<h3 id="af-curve-fitting">AF Curve Fitting<a class="headerlink" href="#af-curve-fitting" title="Permanent link">#</a></h3>
+<p>This option is only available when the Star HFR autofocus method is selected (for contrast detection, a Gaussian curve is always used). It determines what methodology should be used for fitting the focus points to a smooth curve.</p>
+<ul>
+<li>Trend Lines: this is the default option, and uses error-weighted trend lines for the left and right side of focus. The intersection of the trend lines is the point of best focus.</li>
+<li>Parabolic: an error-weighted parabolic fit will be done on the focus points, and its minimum determines the point of best focus. This is most appropriate for users whose autofocus step size and offset steps keep them in the vicinity of the CFZ (critical focus zone), so that the asymptotes of the focus curve are usually not reached.</li>
+<li>Hyperbolic: an error-weighted hyperbolic fit will be done on the focus points, and its minimum determines the point of best focus. This is appropriate for most users, for whom the focus curve will resemble a hyperbola, with clear asymptotes on each side of focus.</li>
+<li>Parabolic + Trends or Hyperbolic + Trends: This will fit the focus points with both trend lines and a parabolic or hyperbolic fitting. The point of best focus is then an average between the trend line intersection and the hyperbolic or parabolic minimum.</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Which fitting method works best depends on the user and their particular conditions. Poor seeing conditions in particular can make parabolic fitting very appropriate, while Hyperbolic fitting (or hyperbolic + trends) should work best for most users</p>
+</div>
+<h3 id="focuser-settle-time">Focuser Settle Time<a class="headerlink" href="#focuser-settle-time" title="Permanent link">#</a></h3>
+<p>This is the time, in seconds, that will be waited for after a focuser movement, and before the next exposure. This can be useful for focusing systems that can make the imaging train vibrate, like some belt focusers. For most users, this can be kept at zero.</p>
+<h3 id="af-number-of-attempts">AF Number of attempts<a class="headerlink" href="#af-number-of-attempts" title="Permanent link">#</a></h3>
+<p>If a focus run is deemed unsuccessful (which can happen with the Star HFR methodology, which compares the final Star HFR to the initial Star HFR), if there are Auto Focus Attempts left, a new focus run will be attempted. When all the attempts are exhausted, the autofocus routine will declare failure, get back to its original focuser position, and imaging will continue as usual. For most users, a value of 1 (single attempt, no re-try in case of failure) or 2 (one reattempt in case of failure) is appropriate.</p>
+<h3 id="af-number-of-frames-per-point">AF Number of Frames per point<a class="headerlink" href="#af-number-of-frames-per-point" title="Permanent link">#</a></h3>
+<p>For users for whom extremely precise focus is critical (such as users in good seeing conditions and high resolution imaging trains), getting very accurate focus points and thus focus curve fitting is necessary. To accomplish that, the Auto Focus Routine can take multiple exposures (as per this parameter) per focuser position (rather than a single one) and average their Star HFR or contrast measurement - this leads to smoother, more precise focusing curves, at the cost of more time spent autofocusing. For most users, a value of 1 works well.</p>
+<h3 id="use-brightest-n-stars">Use Brightest n Stars<a class="headerlink" href="#use-brightest-n-stars" title="Permanent link">#</a></h3>
+<p>This setting, which is only available for the Star HFR focusing method, will detect the top n brightest stars in the FOV, and use only those stars during the whole auto-focusing sequence. As the positions of the stars can change in unstable imaging trains, or imaging trains subject to mirror shift, this should only be used for very stable imaging setups. For most users, a value of 0 (meaning all the detected stars in the FOV will be used) works best.</p>
+<h3 id="af-inner-crop-ratio-and-af-outer-crop-ratio">AF Inner Crop Ratio and AF Outer Crop Ratio<a class="headerlink" href="#af-inner-crop-ratio-and-af-outer-crop-ratio" title="Permanent link">#</a></h3>
+<p>These settings (numbers between 0.2 and 1) are used to define a region of interest for the autofocusing method. For Star HFR, this is how it works:</p>
+<ul>
+<li>If both ratios are set to 1, nothing is done, the whole frame is used for autofocus</li>
+<li>If Inner Crop Ratio is set to a value below one, such as 0.5, and Outer Crop Ratio is set to 1, a central ROI (Region of Interest - in this case corresponding to 50% of the full frame size) will be used for star detection. If the camera is able to subsample to that particular ROI, it will do so. Otherwise, the full frame will be captured, but only the stars within the ROI will be used. If Annotate Image is set to true, the effect of the setting will then be readily visible, as per the following screenshot.</li>
+</ul>
+<p><img alt="Inner Crop Ratio" src="../images/advanced/innercropratio.png" /></p>
+<ul>
+<li>If Inner Crop Ratio and Outer Crop Ratio are both set to values less than 1 (note that the Outer Crop Ratio value cannot be smaller than the Inner Crop Ratio), a "doughnut" of sorts is created between the inner rectangle and the outer rectangle - this will be ROI for autofocus. This is good for some optical systems which are best focused at 2/3 of the field of view, like some Takahashi refractors. The result is as below (inner = 0.5 and outer = 0.8).</li>
+</ul>
+<p><img alt="Outer Crop Ratio" src="../images/advanced/outercropratio.png" /></p>
+<p>Note that it is possible to have the inner crop ratio to some value, and the outer crop ratio to a value such as 0.99 to take into account only the outside of the center - this can be useful for centered very dense globular clusters, although they should not pose a big issue to the N.I.N.A. star detection routines.</p>
+<p>Note that for Contrast Detection methods, only the inner crop ratio is available. In addition, for the Statistics contrast detection method, it will only work if the camera can subsample to the required ROI.</p>
+<h3 id="backlash">Backlash<a class="headerlink" href="#backlash" title="Permanent link">#</a></h3>
+<p>Most focusers suffer from some degree of backlash, which is a certain amount of "slippage" when reversing directions. That backlash can be precisely measured and compensated in software. For most focusers, the IN (when the focuser switches back to an inwards direction after moving outwards) and OUT (when focuser switches back to an outwards direction after moving inwards) are identical. </p>
+<h4 id="identifying-backlash">Identifying backlash<a class="headerlink" href="#identifying-backlash" title="Permanent link">#</a></h4>
+<p>It is critical for autofocus that all backlash is removed during a focus run. Without it the final focus position will never be reached properly. Therefore the backlash needs to be identified.<br />
+An easy way to see this, is by looking at the Autofocus chart itself. The backlash will be prominent on the right side from the starting position and will show as a horizontal line in the chart.</p>
+<p><img alt="Typical Backlash" src="../images/advanced/backlash.png" /></p>
+<p>In the above example the amount of backlash is at least 100 steps. Let's explain why the right side will show the backlash like that.<br />
+The initial focuser position for the above example was around step 9000. To begin the autofocus routine, the focuser will move outwards to position 9300. The first measurement is taken. Then the focuser needs to travel to position 9200. Here the direction is changed from outwards to inwards. Every time a change of direction happens, the backlash needs to be compensated. As there was no compensation for the above example, the focuser thinks that it moved to position 9200, but due to the backlash the physical movement of the draw tube was none. Therefore the next measurement point will have the same HFR value as before, resulting in a flat line until the backlash was overcome. Finally when the focuser was moving inwards to the last autofocus point at position 8600 it needs to change directions again to move to the calculated focus point. Here again the backlash was not compensated and the focus position will be missed, resulting in a bad end result.</p>
+<h4 id="compensating-backlash">Compensating backlash<a class="headerlink" href="#compensating-backlash" title="Permanent link">#</a></h4>
+<p>N.I.N.A. offers two backlash compensation methods:</p>
+<ul>
+<li>Absolute: 
+  When the focuser changes directions, an absolute value will be added to the focuser movement.
+  Backlash IN: when the focuser changes from moving outwards to moving inwards the Backlash IN value will be added
+  Backlash OUT: when the focuser changes from moving inwards to moving outwards the Backlash OUT value will be added</li>
+<li>Overshoot:
+  This method will compensate for Backlash by overshooting the target position by a large amount and then moving the focuser back to the initially requested position.
+  Due to this compensation the last movement of the focuser will always be in the same direction (either always inwards or always outwards)</li>
+</ul>
+<blockquote>
+<p>Absolute is indicated for focusers with relatively small backlash and requires a more accurate measurement of the amount of backlash, while Overshoot is more forgiving and can be safely used for most focusers.</p>
+</blockquote>
+<p><strong>Backlash IN/OUT</strong>
+* The focuser backlash in the IN (decreasing position) and OUT (increasing position) directions, expressed in focuser steps. </p>
+<blockquote>
+<p>When Overshoot is chosen, only ONE between Backlash IN and OUT must be set! When setting IN, the amount will be applied on each inward movement, so the final movement will always be outwards. For Backlash OUT, it will be the other way around</p>
+</blockquote>
+<h3 id="binning">Binning<a class="headerlink" href="#binning" title="Permanent link">#</a></h3>
+<p>Autofocus can sometimes work more efficiently on binned images. This is a number between 1 and 4, representing 1x1, 2x2, 3x3, and 4x4 binning. This will attempt to bin the camera image to that particular value. For most users, a value of 1 is appropriate.</p>
+<h2 id="auto-focus-filter">Auto-Focus Filter<a class="headerlink" href="#auto-focus-filter" title="Permanent link">#</a></h2>
+<p>Another parameter that affects the auto-focus routine is the Auto-Focus Filter. It is possible to set an auto-focus filter, as described in the <a href="../tabs/options/equipment.html">Equipment Options Section</a>. If set, and the <em>Use FilterWheel Offsets</em> setting is set to On, the autofocus routine will use the Auto-Focus filter rather than the currently set filter in the filter wheel, and make sure the focuser offset is applied when switching to the autofocus filter, and when switching back to the imaging filter. This can be particularly useful for Narrowband imagers, where the filters can force long exposures for autofocus, such as 10 to 30 seconds.</p>
+<p><img alt="Auto-Focus Filter" src="../images/advanced/Autofocusfilter.png" /></p>
+<h2 id="auto-focus-logs">Auto-Focus Logs<a class="headerlink" href="#auto-focus-logs" title="Permanent link">#</a></h2>
+<p>For each successful Auto-Focus that has been performed a JSON log file is created containing detailed information about the autofocus run. There you can find the used filter, all the steps that were measured and other useful  information to evaluate an Auto-Focus run from the past. Furthermore these logs can help greatly in analysing potential issues with Auto-Focus by sharing this file with other people.  </p>
+<p>These logs are stored inside <code>%LOCALAPPDATA%\NINA\Autofocus\</code></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2019-2025 Stefan Berg and the N.I.N.A. contributors
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": [], "search": "../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
