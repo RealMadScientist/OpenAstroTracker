@@ -1,0 +1,410 @@
+2026-11-18 23:54:08,754:DEBUG:Logging initialized (logfile=C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\logs\oat_fw_gui_2026-11-18-23-54-08.log)
+2026-11-18 23:54:08,769:DEBUG:platform_str=windows
+2026-11-18 23:54:08,770:DEBUG:Set up logging
+2026-11-18 23:54:08,770:DEBUG:Install dir is C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows
+2026-11-18 23:54:08,770:INFO:Adding portable git:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.portable_git\bin to PATH
+2026-11-18 23:54:08,773:INFO:Setting PLATFORMIO_CORE_DIR to C:\Users\ClemNet\AppData\Local\Temp\.pioOATFWGUI2.1.1-release+591051
+2026-11-18 23:54:08,773:DEBUG:Checking for previous OATFWGUI pio core installs...
+2026-11-18 23:54:08,775:INFO:Removing other pio core directory:.pioOATFWGUI2.1.1-release+591051
+2026-11-18 23:54:10,630:DEBUG:Python interpreter: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe
+2026-11-18 23:54:10,630:DEBUG:Python interpreter dir: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local
+2026-11-18 23:54:10,630:DEBUG:Embedded scripts dir: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\Scripts
+2026-11-18 23:54:10,630:INFO:Running in embedded python
+2026-11-18 23:54:10,630:DEBUG:Adding external process platformio (C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe, ['-m', 'platformio'])
+2026-11-18 23:54:10,631:DEBUG:Path is C:/Users/ClemNet/Documents/GitHub/OpenAstroTracker/Firmware/OATFWGUI_2.1.1-release+591051_Windows/.python_local/python.exe
+2026-11-18 23:54:10,631:DEBUG:Process environment:['=::=::\\', '=C:=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows', 'ALLUSERSPROFILE=C:\\ProgramData', 'APPDATA=C:\\Users\\ClemNet\\AppData\\Roaming', 'CommonProgramFiles=C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432=C:\\Program Files\\Common Files', 'COMPUTERNAME=CLEMNET', 'ComSpec=C:\\Windows\\system32\\cmd.exe', 'DriverData=C:\\Windows\\System32\\Drivers\\DriverData', 'EFC_15516_1262719628=1', 'EFC_15516_1592913036=1', 'EFC_15516_2283032206=1', 'EFC_15516_2397410445=1', 'EFC_15516_2946480783=1', 'EFC_15516_344590478=1', 'EFC_15516_3789132940=1', 'EFC_15516_4126798990=1', 'FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING=Default', 'HOMEDRIVE=C:', 'HOMEPATH=\\Users\\ClemNet', 'LOCALAPPDATA=C:\\Users\\ClemNet\\AppData\\Local', 'LOGONSERVER=\\\\CLEMNET', 'NUMBER_OF_PROCESSORS=8', 'OneDrive=C:\\Users\\ClemNet\\OneDrive', 'OS=Windows_NT', 'Path=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Lib\\site-packages\\PySide6;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\\\.python_local\\DLLs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Tailscale\\;C:\\Program Files\\MATLAB\\R2019b\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\ClemNet\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;;C:\\Program Files\\Speedtest;C:\\Users\\ClemNet\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.portable_git\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Scripts', 'PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PLATFORMIO_CORE_DIR=C:\\Users\\ClemNet\\AppData\\Local\\Temp\\.pioOATFWGUI2.1.1-release+591051', 'PROCESSOR_ARCHITECTURE=AMD64', 'PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 189 Stepping 1, GenuineIntel', 'PROCESSOR_LEVEL=6', 'PROCESSOR_REVISION=bd01', 'ProgramData=C:\\ProgramData', 'ProgramFiles=C:\\Program Files', 'ProgramFiles(x86)=C:\\Program Files (x86)', 'ProgramW6432=C:\\Program Files', 'PROMPT=$P$G', 'PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC=C:\\Users\\Public', 'PyCharm=C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;', 'PYSIDE6_OPTION_PYTHON_ENUM=True', 'SESSIONNAME=Console', 'SystemDrive=C:', 'SystemRoot=C:\\Windows', 'TEMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'TMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'USERDOMAIN=CLEMNET', 'USERDOMAIN_ROAMINGPROFILE=CLEMNET', 'USERNAME=phant', 'USERPROFILE=C:\\Users\\ClemNet', 'windir=C:\\Windows', 'ZES_ENABLE_SYSMAN=1']
+2026-11-18 23:54:10,631:INFO:Starting C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe with args: ['-m', 'platformio', 'system', 'info'] and env None
+2026-11-18 23:54:10,631:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Starting
+2026-11-18 23:54:10,638:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Running
+2026-11-18 23:54:10,950:INFO:********************************************************************************
+If you like PlatformIO, please:
+- star it on GitHub > https://github.com/platformio/platformio-core
+- follow us on LinkedIn to stay up-to-date on the latest project news > https://www.linkedin.com/company/platformio/
+- try PlatformIO IDE for embedded development > https://platformio.org/platformio-ide
+********************************************************************************
+2026-11-18 23:54:10,961:INFO:--------------------------  --------------------------------------------------------------------------------------------------------------------------------------
+PlatformIO Core             6.1.16
+Python                      3.10.7-final.0
+System Type                 windows_amd64
+Platform                    Windows-10
+File System Encoding        utf-8
+Locale Encoding             cp1252
+PlatformIO Core Directory   C:\Users\ClemNet\AppData\Local\Temp\.pioOATFWGUI2.1.1-release+591051
+PlatformIO Core Executable  C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\Scripts\platformio.exe
+Python Executable           C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe
+Global Libraries            0
+Development Platforms       0
+Tools & Toolchains          0
+--------------------------  --------------------------------------------------------------------------------------------------------------------------------------
+2026-11-18 23:54:12,046:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Not running
+2026-11-18 23:54:12,046:DEBUG:Cleaning up external process: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe. Exited with 0
+2026-11-18 23:54:12,046:DEBUG:Process environment:['=::=::\\', '=C:=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows', 'ALLUSERSPROFILE=C:\\ProgramData', 'APPDATA=C:\\Users\\ClemNet\\AppData\\Roaming', 'CommonProgramFiles=C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432=C:\\Program Files\\Common Files', 'COMPUTERNAME=CLEMNET', 'ComSpec=C:\\Windows\\system32\\cmd.exe', 'DriverData=C:\\Windows\\System32\\Drivers\\DriverData', 'EFC_15516_1262719628=1', 'EFC_15516_1592913036=1', 'EFC_15516_2283032206=1', 'EFC_15516_2397410445=1', 'EFC_15516_2946480783=1', 'EFC_15516_344590478=1', 'EFC_15516_3789132940=1', 'EFC_15516_4126798990=1', 'FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING=Default', 'HOMEDRIVE=C:', 'HOMEPATH=\\Users\\ClemNet', 'LOCALAPPDATA=C:\\Users\\ClemNet\\AppData\\Local', 'LOGONSERVER=\\\\CLEMNET', 'NUMBER_OF_PROCESSORS=8', 'OneDrive=C:\\Users\\ClemNet\\OneDrive', 'OS=Windows_NT', 'Path=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Lib\\site-packages\\PySide6;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\\\.python_local\\DLLs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Tailscale\\;C:\\Program Files\\MATLAB\\R2019b\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\ClemNet\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;;C:\\Program Files\\Speedtest;C:\\Users\\ClemNet\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.portable_git\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Scripts', 'PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PLATFORMIO_CORE_DIR=C:\\Users\\ClemNet\\AppData\\Local\\Temp\\.pioOATFWGUI2.1.1-release+591051', 'PROCESSOR_ARCHITECTURE=AMD64', 'PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 189 Stepping 1, GenuineIntel', 'PROCESSOR_LEVEL=6', 'PROCESSOR_REVISION=bd01', 'ProgramData=C:\\ProgramData', 'ProgramFiles=C:\\Program Files', 'ProgramFiles(x86)=C:\\Program Files (x86)', 'ProgramW6432=C:\\Program Files', 'PROMPT=$P$G', 'PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC=C:\\Users\\Public', 'PyCharm=C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;', 'PYSIDE6_OPTION_PYTHON_ENUM=True', 'SESSIONNAME=Console', 'SystemDrive=C:', 'SystemRoot=C:\\Windows', 'TEMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'TMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'USERDOMAIN=CLEMNET', 'USERDOMAIN_ROAMINGPROFILE=CLEMNET', 'USERNAME=phant', 'USERPROFILE=C:\\Users\\ClemNet', 'windir=C:\\Windows', 'ZES_ENABLE_SYSMAN=1']
+2026-11-18 23:54:12,048:INFO:Starting C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe with args: ['-m', 'platformio', 'settings', 'set', 'check_platformio_interval', '9999'] and env None
+2026-11-18 23:54:12,048:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Starting
+2026-11-18 23:54:12,059:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Running
+2026-11-18 23:54:12,889:INFO:The new value for the setting has been set!
+2026-11-18 23:54:12,900:INFO:Name                       Current value [Default]    Description
+-------------------------  -------------------------  -------------------------------------------------
+check_platformio_interval  9999 [7]                   Check for the new PlatformIO Core interval (days)
+2026-11-18 23:54:13,968:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Not running
+2026-11-18 23:54:13,969:DEBUG:Cleaning up external process: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe. Exited with 0
+2026-11-18 23:54:13,969:DEBUG:Process environment:['=::=::\\', '=C:=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows', 'ALLUSERSPROFILE=C:\\ProgramData', 'APPDATA=C:\\Users\\ClemNet\\AppData\\Roaming', 'CommonProgramFiles=C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432=C:\\Program Files\\Common Files', 'COMPUTERNAME=CLEMNET', 'ComSpec=C:\\Windows\\system32\\cmd.exe', 'DriverData=C:\\Windows\\System32\\Drivers\\DriverData', 'EFC_15516_1262719628=1', 'EFC_15516_1592913036=1', 'EFC_15516_2283032206=1', 'EFC_15516_2397410445=1', 'EFC_15516_2946480783=1', 'EFC_15516_344590478=1', 'EFC_15516_3789132940=1', 'EFC_15516_4126798990=1', 'FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING=Default', 'HOMEDRIVE=C:', 'HOMEPATH=\\Users\\ClemNet', 'LOCALAPPDATA=C:\\Users\\ClemNet\\AppData\\Local', 'LOGONSERVER=\\\\CLEMNET', 'NUMBER_OF_PROCESSORS=8', 'OneDrive=C:\\Users\\ClemNet\\OneDrive', 'OS=Windows_NT', 'Path=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Lib\\site-packages\\PySide6;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\\\.python_local\\DLLs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Tailscale\\;C:\\Program Files\\MATLAB\\R2019b\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\ClemNet\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;;C:\\Program Files\\Speedtest;C:\\Users\\ClemNet\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.portable_git\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Scripts', 'PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PLATFORMIO_CORE_DIR=C:\\Users\\ClemNet\\AppData\\Local\\Temp\\.pioOATFWGUI2.1.1-release+591051', 'PROCESSOR_ARCHITECTURE=AMD64', 'PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 189 Stepping 1, GenuineIntel', 'PROCESSOR_LEVEL=6', 'PROCESSOR_REVISION=bd01', 'ProgramData=C:\\ProgramData', 'ProgramFiles=C:\\Program Files', 'ProgramFiles(x86)=C:\\Program Files (x86)', 'ProgramW6432=C:\\Program Files', 'PROMPT=$P$G', 'PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC=C:\\Users\\Public', 'PyCharm=C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;', 'PYSIDE6_OPTION_PYTHON_ENUM=True', 'SESSIONNAME=Console', 'SystemDrive=C:', 'SystemRoot=C:\\Windows', 'TEMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'TMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'USERDOMAIN=CLEMNET', 'USERDOMAIN_ROAMINGPROFILE=CLEMNET', 'USERNAME=phant', 'USERPROFILE=C:\\Users\\ClemNet', 'windir=C:\\Windows', 'ZES_ENABLE_SYSMAN=1']
+2026-11-18 23:54:13,970:INFO:Starting C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe with args: ['-m', 'platformio', 'settings', 'set', 'check_prune_system_threshold', '0'] and env None
+2026-11-18 23:54:13,970:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Starting
+2026-11-18 23:54:13,984:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Running
+2026-11-18 23:54:14,837:INFO:The new value for the setting has been set!
+2026-11-18 23:54:14,849:INFO:Name                          Current value [Default]    Description
+----------------------------  -------------------------  --------------------------------------------------------
+check_prune_system_threshold  0 [1024]                   Check for pruning unnecessary data threshold (megabytes)
+2026-11-18 23:54:15,926:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Not running
+2026-11-18 23:54:15,926:DEBUG:Cleaning up external process: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe. Exited with 0
+2026-11-18 23:54:15,927:DEBUG:Creating app
+2026-11-18 23:54:15,986:DEBUG:Creating main window
+2026-11-18 23:54:16,060:INFO:Checking for new OATFWGUI release from https://api.github.com/repos/OpenAstroTech/OATFWGUI/releases
+2026-11-18 23:54:16,066:DEBUG:Starting new HTTPS connection (1): api.github.com:443
+2026-11-18 23:54:16,604:DEBUG:https://api.github.com:443 "GET /repos/OpenAstroTech/OATFWGUI/releases HTTP/1.1" 200 None
+2026-11-18 23:54:16,609:DEBUG:No new version 2.1.1(2.1.1) <= 2.1.1(2.1.1-release+591051)
+2026-11-18 23:54:16,614:DEBUG:Loading main widget UI from C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\main_widget.ui
+2026-11-18 23:54:18,021:DEBUG:Creating worker <bound method BusinessLogic.get_fw_versions of <gui_logic.BusinessLogic object at 0x0000024752172F50>>
+2026-11-18 23:54:18,023:INFO:Grabbing available FW versions from https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/releases
+2026-11-18 23:54:18,026:DEBUG:Starting new HTTPS connection (1): api.github.com:443
+2026-11-18 23:54:18,551:DEBUG:https://api.github.com:443 "GET /repos/OpenAstroTech/OpenAstroTracker-Firmware/releases HTTP/1.1" 200 None
+2026-11-18 23:54:18,554:DEBUG:LogicState updated: release_list None -> [FWVersion(nice_name='develop', url='https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/archive/refs/heads/develop.zip'), FWVersion(nice_name='oae-fw', url='https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/archive/refs/heads/oae-fw.zip'), FWVersion(nice_name='v1.14.0', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.14.0'), FWVersion(nice_name='v1.13.22', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.13.22'), FWVersion(nice_name='v1.13.21', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.13.21'), FWVersion(nice_name='v1.13.9', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.13.9'), FWVersion(nice_name='Arduino V1.13.6', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.13.6'), FWVersion(nice_name='Arduino V1.13.3', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.13.3'), FWVersion(nice_name='Arduino V1.13.0 Pre-Release', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.13.0-beta'), FWVersion(nice_name='V1.12.6 Pre-release', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.12.6-Beta'), FWVersion(nice_name='Arduino V1.11.5', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.11.5'), FWVersion(nice_name='Arduino V1.10.2', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.10.2'), FWVersion(nice_name='Arduino V1.9.38', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.38'), FWVersion(nice_name='Arduino V1.9.34', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.34'), FWVersion(nice_name='Arduino V1.9.16', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.16'), FWVersion(nice_name='Arduino V1.9.07', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.07'), FWVersion(nice_name='Arduino V1.9.05', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.05'), FWVersion(nice_name='Arduino V1.9.04', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.04'), FWVersion(nice_name='Arduino V1.9.03', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.9.03'), FWVersion(nice_name='Arduino V1.8.75', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.8.75'), FWVersion(nice_name='Arduino V1.8.74', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.8.74'), FWVersion(nice_name='Arduino V1.8.72', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.8.72'), FWVersion(nice_name='Arduino V1.8.64', url='https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/V1.8.64')]
+2026-11-18 23:54:18,558:DEBUG:Creating worker <bound method BusinessLogic.refresh_ports of <gui_logic.BusinessLogic object at 0x0000024752172F50>>
+2026-11-18 23:54:18,729:DEBUG:Process environment:['=::=::\\', '=C:=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows', 'ALLUSERSPROFILE=C:\\ProgramData', 'APPDATA=C:\\Users\\ClemNet\\AppData\\Roaming', 'CommonProgramFiles=C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432=C:\\Program Files\\Common Files', 'COMPUTERNAME=CLEMNET', 'ComSpec=C:\\Windows\\system32\\cmd.exe', 'DriverData=C:\\Windows\\System32\\Drivers\\DriverData', 'EFC_15516_1262719628=1', 'EFC_15516_1592913036=1', 'EFC_15516_2283032206=1', 'EFC_15516_2397410445=1', 'EFC_15516_2946480783=1', 'EFC_15516_344590478=1', 'EFC_15516_3789132940=1', 'EFC_15516_4126798990=1', 'FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING=Default', 'HOMEDRIVE=C:', 'HOMEPATH=\\Users\\ClemNet', 'LOCALAPPDATA=C:\\Users\\ClemNet\\AppData\\Local', 'LOGONSERVER=\\\\CLEMNET', 'NUMBER_OF_PROCESSORS=8', 'OneDrive=C:\\Users\\ClemNet\\OneDrive', 'OS=Windows_NT', 'Path=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Lib\\site-packages\\PySide6;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\\\.python_local\\DLLs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Tailscale\\;C:\\Program Files\\MATLAB\\R2019b\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\ClemNet\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;;C:\\Program Files\\Speedtest;C:\\Users\\ClemNet\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.portable_git\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Scripts', 'PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PLATFORMIO_CORE_DIR=C:\\Users\\ClemNet\\AppData\\Local\\Temp\\.pioOATFWGUI2.1.1-release+591051', 'PROCESSOR_ARCHITECTURE=AMD64', 'PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 189 Stepping 1, GenuineIntel', 'PROCESSOR_LEVEL=6', 'PROCESSOR_REVISION=bd01', 'ProgramData=C:\\ProgramData', 'ProgramFiles=C:\\Program Files', 'ProgramFiles(x86)=C:\\Program Files (x86)', 'ProgramW6432=C:\\Program Files', 'PROMPT=$P$G', 'PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC=C:\\Users\\Public', 'PyCharm=C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;', 'PYSIDE6_OPTION_PYTHON_ENUM=True', 'PYSIDE_DESIGNER_PLUGINS=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\OATFWGUI', 'PYTHONPATH=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\OATFWGUI', 'SESSIONNAME=Console', 'SystemDrive=C:', 'SystemRoot=C:\\Windows', 'TEMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'TMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'USERDOMAIN=CLEMNET', 'USERDOMAIN_ROAMINGPROFILE=CLEMNET', 'USERNAME=phant', 'USERPROFILE=C:\\Users\\ClemNet', 'windir=C:\\Windows', 'ZES_ENABLE_SYSMAN=1']
+2026-11-18 23:54:18,730:DEBUG:Executing app
+2026-11-18 23:54:18,730:INFO:Starting C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe with args: ['-m', 'platformio', 'device', 'list', '--serial', '--json-output'] and env None
+2026-11-18 23:54:18,731:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Starting
+2026-11-18 23:54:18,745:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Running
+2026-11-18 23:54:18,747:DEBUG:FW version changed, clearing some state
+2026-11-18 23:54:18,748:DEBUG:LogicState updated: pio_env None -> None
+2026-11-18 23:54:19,650:INFO:[{"port": "COM3", "description": "USB-SERIAL CH340 (COM3)", "hwid": "USB VID:PID=1A86:7523 SER= LOCATION=1-4"}]
+2026-11-18 23:54:20,763:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Not running
+2026-11-18 23:54:20,763:INFO:platformio refresh ports finished
+2026-11-18 23:54:20,765:INFO:Normal exit
+2026-11-18 23:54:20,766:DEBUG:LogicState updated: serial_ports [] -> ['COM3']
+2026-11-18 23:54:20,771:DEBUG:Cleaning up external process: C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe. Exited with 0
+2026-11-18 23:54:24,430:DEBUG:FW version changed, clearing some state
+2026-11-18 23:54:24,431:DEBUG:LogicState updated: pio_env None -> None
+2026-11-18 23:54:25,422:DEBUG:Creating worker <bound method BusinessLogic.download_and_extract_fw of <gui_logic.BusinessLogic object at 0x0000024752172F50>>
+2026-11-18 23:54:25,427:DEBUG:LogicState updated: release_idx None -> 3
+2026-11-18 23:54:25,434:INFO:Downloading OAT FW from: https://api.github.com/repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.13.22
+2026-11-18 23:54:25,439:DEBUG:Starting new HTTPS connection (1): api.github.com:443
+2026-11-18 23:54:25,821:DEBUG:https://api.github.com:443 "GET /repos/OpenAstroTech/OpenAstroTracker-Firmware/zipball/v1.13.22 HTTP/1.1" 302 0
+2026-11-18 23:54:25,828:DEBUG:Starting new HTTPS connection (1): codeload.github.com:443
+2026-11-18 23:54:26,231:DEBUG:https://codeload.github.com:443 "GET /OpenAstroTech/OpenAstroTracker-Firmware/legacy.zip/refs/tags/v1.13.22 HTTP/1.1" 200 None
+2026-11-18 23:54:26,280:INFO:Removing previously downloaded FW from C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW
+2026-11-18 23:54:26,748:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\ESP8266 and ESP32 OLED driver for SSD1306 displays\.git\objects\pack\pack-9db25c56d7bbfac1e5f006e17eccda8c5fae43cf.idx, attempting to make writable
+2026-11-18 23:54:26,750:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\ESP8266 and ESP32 OLED driver for SSD1306 displays\.git\objects\pack\pack-9db25c56d7bbfac1e5f006e17eccda8c5fae43cf.pack, attempting to make writable
+2026-11-18 23:54:26,752:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\ESP8266 and ESP32 OLED driver for SSD1306 displays\.git\objects\pack\pack-9db25c56d7bbfac1e5f006e17eccda8c5fae43cf.rev, attempting to make writable
+2026-11-18 23:54:26,806:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\InterruptStepper\.git\objects\pack\pack-719b7495a4ac7c7650dc7629a9e2b9529be2e277.idx, attempting to make writable
+2026-11-18 23:54:26,809:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\InterruptStepper\.git\objects\pack\pack-719b7495a4ac7c7650dc7629a9e2b9529be2e277.pack, attempting to make writable
+2026-11-18 23:54:26,810:DEBUG:Problem removing C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\.pio\libdeps\mksgenlv21\InterruptStepper\.git\objects\pack\pack-719b7495a4ac7c7650dc7629a9e2b9529be2e277.rev, attempting to make writable
+2026-11-18 23:54:27,155:INFO:Extracting FW from C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW.zip
+2026-11-18 23:54:27,431:INFO:Rename C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OpenAstroTech-OpenAstroTracker-Firmware-cbc0bca to C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW
+2026-11-18 23:54:27,435:INFO:Extracted FW to C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW
+2026-11-18 23:54:27,436:DEBUG:LogicState updated: fw_dir None -> C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW
+2026-11-18 23:54:27,440:INFO:Found pio environments: ['ramps', 'mksgenlv21', 'mksgenlv2', 'mksgenlv1', 'esp32', 'oaeboardv1', 'native']
+2026-11-18 23:54:27,441:DEBUG:LogicState updated: pio_envs [] -> [PioEnv(nice_name='RAMPS', raw_name='ramps'), PioEnv(nice_name='MKS Gen L v2.1', raw_name='mksgenlv21'), PioEnv(nice_name='MKS Gen L v2', raw_name='mksgenlv2'), PioEnv(nice_name='MKS Gen L v1', raw_name='mksgenlv1'), PioEnv(nice_name='ESP32', raw_name='esp32'), PioEnv(nice_name='OAE Board v1', raw_name='oaeboardv1')]
+2026-11-18 23:54:27,443:DEBUG:LogicState updated: pio_env None -> None
+2026-11-18 23:54:28,941:DEBUG:LogicState updated: pio_env None -> mksgenlv21
+2026-11-18 23:54:32,512:INFO:Selected local config C:/Users/ClemNet/Documents/GitHub/OpenAstroTracker/Firmware/Configuration_local.hpp
+2026-11-18 23:54:32,519:DEBUG:LogicState updated: config_file_path None -> C:/Users/ClemNet/Documents/GitHub/OpenAstroTracker/Firmware/Configuration_local.hpp
+2026-11-18 23:54:33,635:DEBUG:Creating worker <bound method BusinessLogic.build_fw of <gui_logic.BusinessLogic object at 0x0000024752172F50>>
+2026-11-18 23:54:33,645:DEBUG:No patches applied
+2026-11-18 23:54:33,647:INFO:Copying config file from C:/Users/ClemNet/Documents/GitHub/OpenAstroTracker/Firmware/Configuration_local.hpp -> C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW\Configuration_local.hpp
+2026-11-18 23:54:33,656:INFO:Building FW environment=mksgenlv21 dir=C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFW
+2026-11-18 23:54:33,660:INFO:Extra scripts=
+pre:pre_script_patch_debug.py
+post:post_script_remove_patched_files.py
+2026-11-18 23:54:33,662:DEBUG:Process environment:['=::=::\\', '=C:=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows', 'ALLUSERSPROFILE=C:\\ProgramData', 'APPDATA=C:\\Users\\ClemNet\\AppData\\Roaming', 'CommonProgramFiles=C:\\Program Files\\Common Files', 'CommonProgramFiles(x86)=C:\\Program Files (x86)\\Common Files', 'CommonProgramW6432=C:\\Program Files\\Common Files', 'COMPUTERNAME=CLEMNET', 'ComSpec=C:\\Windows\\system32\\cmd.exe', 'DriverData=C:\\Windows\\System32\\Drivers\\DriverData', 'EFC_15516_1262719628=1', 'EFC_15516_1592913036=1', 'EFC_15516_2283032206=1', 'EFC_15516_2397410445=1', 'EFC_15516_2946480783=1', 'EFC_15516_344590478=1', 'EFC_15516_3789132940=1', 'EFC_15516_4126798990=1', 'FPS_BROWSER_APP_PROFILE_STRING=Internet Explorer', 'FPS_BROWSER_USER_PROFILE_STRING=Default', 'HOMEDRIVE=C:', 'HOMEPATH=\\Users\\ClemNet', 'LOCALAPPDATA=C:\\Users\\ClemNet\\AppData\\Local', 'LOGONSERVER=\\\\CLEMNET', 'NUMBER_OF_PROCESSORS=8', 'OneDrive=C:\\Users\\ClemNet\\OneDrive', 'OS=Windows_NT', 'Path=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Lib\\site-packages\\PySide6;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\\\.python_local\\DLLs;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path;C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\Git\\bin;C:\\Program Files\\Tailscale\\;C:\\Program Files\\MATLAB\\R2019b\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\Scripts\\;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Python\\Python313\\;C:\\Users\\ClemNet\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;;C:\\Program Files\\Speedtest;C:\\Users\\ClemNet\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\ClemNet\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.portable_git\\bin;C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\.python_local\\Scripts', 'PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC', 'PLATFORMIO_CORE_DIR=C:\\Users\\ClemNet\\AppData\\Local\\Temp\\.pioOATFWGUI2.1.1-release+591051', 'PROCESSOR_ARCHITECTURE=AMD64', 'PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 189 Stepping 1, GenuineIntel', 'PROCESSOR_LEVEL=6', 'PROCESSOR_REVISION=bd01', 'ProgramData=C:\\ProgramData', 'ProgramFiles=C:\\Program Files', 'ProgramFiles(x86)=C:\\Program Files (x86)', 'ProgramW6432=C:\\Program Files', 'PROMPT=$P$G', 'PSModulePath=C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules', 'PUBLIC=C:\\Users\\Public', 'PyCharm=C:\\Program Files\\JetBrains\\PyCharm 2025.1.1.1\\bin;', 'PYSIDE6_OPTION_PYTHON_ENUM=True', 'PYSIDE_DESIGNER_PLUGINS=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\OATFWGUI', 'PYTHONPATH=C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\OATFWGUI', 'SESSIONNAME=Console', 'SystemDrive=C:', 'SystemRoot=C:\\Windows', 'TEMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'TMP=C:\\Users\\ClemNet\\AppData\\Local\\Temp', 'USERDOMAIN=CLEMNET', 'USERDOMAIN_ROAMINGPROFILE=CLEMNET', 'USERNAME=phant', 'USERPROFILE=C:\\Users\\ClemNet', 'windir=C:\\Windows', 'ZES_ENABLE_SYSMAN=1']
+2026-11-18 23:54:33,663:INFO:Starting C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe with args: ['-m', 'platformio', 'run', '--environment', 'mksgenlv21', '--project-dir', 'C:\\Users\\ClemNet\\Documents\\GitHub\\OpenAstroTracker\\Firmware\\OATFWGUI_2.1.1-release+591051_Windows\\OATFW', '--verbose'] and env {}
+2026-11-18 23:54:33,663:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Starting
+2026-11-18 23:54:33,678:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Running
+2026-11-18 23:54:34,730:INFO:Processing mksgenlv21 (extends: env:ramps; build_flags: -D ETL_NO_STL, -include ./src/macros/gcc/Macros.hpp, -O2, -D BOARD=BOARD_AVR_MKS_GEN_L_V21; platform: atmelavr@4.2.0; board: ATmega2560; upload_protocol: wiring; build_src_flags: -Wuseless-cast; debug_tool: avr-stub; debug_build_flags: -Og, -g2, -D OAT_DEBUG_BUILD, -D AVR8_BREAKPOINT_MODE=1, -D AVR8_SWINT_SOURCE=7; lib_deps: mikalhart/TinyGPSPlus @ ^1.0.2, teemuatlut/TMCStepper @ ^0.7.1, waspinator/AccelStepper @ ^1.61, arduino-libraries/LiquidCrystal @ ^1.0.7, lincomatic/LiquidTWI2@^1.2.7, olikraus/U8g2@^2.28.8, https://github.com/ClutchplateDude/esp8266-oled-ssd1306#4.6.2, jdolinay/avr-debugger @ 1.2, https://github.com/andre-stefanov/avr-interrupt-stepper#0.0.5; framework: arduino; monitor_speed: 19200; upload_speed: 115200; test_ignore: test_native; src_filter: +<*> -<../.git/> -<../test/>, -<*/.pio/> -<*/.platformio/> -<libs/>; src_build_flags: -Wuseless-cast; debug_init_break: ; debug_load_mode: always; extra_scripts: pre:pre_script_patch_debug.py, post:post_script_remove_patched_files.py; build_unflags: -Os)
+2026-11-18 23:54:34,731:INFO:--------------------------------------------------------------------------------
+2026-11-18 23:54:34,743:INFO:Platform Manager: Installing atmelavr @ 4.2.0
+2026-11-18 23:54:39,954:INFO:Downloading 0%
+2026-11-18 23:54:39,955:INFO: 10% 20% 30%
+2026-11-18 23:54:40,202:INFO: 40%
+2026-11-18 23:54:40,205:INFO: 50%
+2026-11-18 23:54:40,293:INFO:Unpacking 0%
+2026-11-18 23:54:40,371:INFO: 10%
+2026-11-18 23:54:40,447:INFO: 20%
+2026-11-18 23:54:40,521:INFO: 30%
+2026-11-18 23:54:40,591:INFO: 40%
+2026-11-18 23:54:40,663:INFO: 50%
+2026-11-18 23:54:40,733:INFO: 60%
+2026-11-18 23:54:40,808:INFO: 70%
+2026-11-18 23:54:40,883:INFO: 80%
+2026-11-18 23:54:40,974:INFO: 90%
+2026-11-18 23:54:41,061:INFO: 100%
+2026-11-18 23:54:44,721:INFO:Platform Manager: atmelavr@4.2.0 has been installed!
+2026-11-18 23:54:44,759:INFO:Tool Manager: Installing platformio/toolchain-atmelavr @ ~1.70300.0
+2026-11-18 23:54:47,690:INFO:Downloading 0%
+2026-11-18 23:54:47,846:INFO: 10%
+2026-11-18 23:54:47,942:INFO: 20%
+2026-11-18 23:54:48,016:INFO: 30%
+2026-11-18 23:54:48,094:INFO: 40%
+2026-11-18 23:54:48,170:INFO: 50%
+2026-11-18 23:54:48,249:INFO: 60%
+2026-11-18 23:54:48,324:INFO: 70%
+2026-11-18 23:54:48,387:INFO: 80%
+2026-11-18 23:54:48,458:INFO: 90%
+2026-11-18 23:54:48,525:INFO: 100%
+2026-11-18 23:54:48,525:INFO:
+2026-11-18 23:54:49,925:INFO:Unpacking 0%
+2026-11-18 23:54:50,219:INFO: 10%
+2026-11-18 23:54:50,511:INFO: 20%
+2026-11-18 23:54:50,726:INFO: 30%
+2026-11-18 23:54:50,913:INFO: 40%
+2026-11-18 23:54:51,107:INFO: 50%
+2026-11-18 23:54:51,315:INFO: 60%
+2026-11-18 23:54:51,515:INFO: 70%
+2026-11-18 23:54:52,255:INFO: 80%
+2026-11-18 23:54:52,444:INFO: 90%
+2026-11-18 23:54:53,029:INFO: 100%
+2026-11-18 23:55:18,600:INFO:Tool Manager: toolchain-atmelavr@1.70300.191015 has been installed!
+2026-11-18 23:55:18,625:INFO:Tool Manager: Installing platformio/framework-arduino-avr-megacore @ ~2.2.3
+2026-11-18 23:55:21,880:INFO:Downloading 0%
+2026-11-18 23:55:21,896:INFO: 10%
+2026-11-18 23:55:21,900:INFO: 20%
+2026-11-18 23:55:21,910:INFO: 30%
+2026-11-18 23:55:21,926:INFO: 40%
+2026-11-18 23:55:21,935:INFO: 50%
+2026-11-18 23:55:21,943:INFO: 60%
+2026-11-18 23:55:21,948:INFO: 70%
+2026-11-18 23:55:21,953:INFO: 80%
+2026-11-18 23:55:21,958:INFO: 90%
+2026-11-18 23:55:21,962:INFO: 100%
+2026-11-18 23:55:23,518:INFO:Unpacking 0%
+2026-11-18 23:55:27,609:INFO: 10%
+2026-11-18 23:55:31,646:INFO: 20%
+2026-11-18 23:55:35,270:INFO: 30%
+2026-11-18 23:55:38,559:INFO: 40%
+2026-11-18 23:55:42,151:INFO: 50%
+2026-11-18 23:55:45,795:INFO: 60%
+2026-11-18 23:55:49,514:INFO: 70%
+2026-11-18 23:55:52,810:INFO: 80%
+2026-11-18 23:55:56,345:INFO: 90%
+2026-11-18 23:56:00,505:INFO: 100%
+2026-11-18 23:58:31,420:INFO:Tool Manager: framework-arduino-avr-megacore@2.2.3 has been installed!
+2026-11-18 23:58:31,441:INFO:Tool Manager: Installing platformio/tool-scons @ ~4.40801.0
+2026-11-18 23:58:34,860:INFO:Downloading 0%
+2026-11-18 23:58:34,864:INFO: 10%
+2026-11-18 23:58:34,873:INFO: 20%
+2026-11-18 23:58:34,878:INFO: 30%
+2026-11-18 23:58:34,882:INFO: 40%
+2026-11-18 23:58:34,890:INFO: 50%
+2026-11-18 23:58:34,894:INFO: 60% 70%
+2026-11-18 23:58:34,897:INFO: 80%
+2026-11-18 23:58:34,906:INFO: 90% 100%
+2026-11-18 23:58:35,006:INFO:Unpacking 0%
+2026-11-18 23:58:35,088:INFO: 10%
+2026-11-18 23:58:35,156:INFO: 20%
+2026-11-18 23:58:35,230:INFO: 30%
+2026-11-18 23:58:35,294:INFO: 40%
+2026-11-18 23:58:35,362:INFO: 50%
+2026-11-18 23:58:35,446:INFO: 60%
+2026-11-18 23:58:35,529:INFO: 70%
+2026-11-18 23:58:35,609:INFO: 80%
+2026-11-18 23:58:35,698:INFO: 90%
+2026-11-18 23:58:35,776:INFO: 100%
+2026-11-18 23:58:39,719:INFO:Tool Manager: tool-scons@4.40801.0 has been installed!
+2026-11-18 23:58:39,750:INFO:Library Manager: Installing mikalhart/TinyGPSPlus @ ^1.0.2
+2026-11-18 23:58:43,195:INFO:Downloading 0%
+2026-11-18 23:58:43,198:INFO: 10% 20% 30% 40% 50%
+2026-11-18 23:58:43,247:INFO:Unpacking 0%
+2026-11-18 23:58:43,255:INFO: 10%
+2026-11-18 23:58:43,264:INFO: 20%
+2026-11-18 23:58:43,268:INFO: 30%
+2026-11-18 23:58:43,285:INFO: 40%
+2026-11-18 23:58:43,292:INFO: 50%
+2026-11-18 23:58:43,302:INFO: 60%
+2026-11-18 23:58:43,311:INFO: 70%
+2026-11-18 23:58:43,314:INFO: 80%
+2026-11-18 23:58:43,324:INFO: 90%
+2026-11-18 23:58:43,328:INFO: 100%
+2026-11-18 23:58:43,691:INFO:Library Manager: TinyGPSPlus@1.1.0 has been installed!
+2026-11-18 23:58:43,714:INFO:Library Manager: Installing teemuatlut/TMCStepper @ ^0.7.1
+2026-11-18 23:58:46,736:INFO:Downloading 0%
+2026-11-18 23:58:46,736:INFO: 10%
+2026-11-18 23:58:46,986:INFO: 20% 30% 40% 50%
+2026-11-18 23:58:47,235:INFO: 60%
+2026-11-18 23:58:47,238:INFO: 70% 80% 90% 100%
+2026-11-18 23:58:47,276:INFO:Unpacking 0%
+2026-11-18 23:58:47,328:INFO: 10%
+2026-11-18 23:58:47,376:INFO: 20%
+2026-11-18 23:58:47,436:INFO: 30%
+2026-11-18 23:58:47,472:INFO: 40%
+2026-11-18 23:58:47,493:INFO: 50%
+2026-11-18 23:58:47,512:INFO: 60%
+2026-11-18 23:58:47,530:INFO: 70%
+2026-11-18 23:58:47,547:INFO: 80%
+2026-11-18 23:58:47,566:INFO: 90%
+2026-11-18 23:58:47,583:INFO: 100%
+2026-11-18 23:58:48,535:INFO:Library Manager: TMCStepper@0.7.3 has been installed!
+2026-11-18 23:58:48,546:INFO:Library Manager: Installing waspinator/AccelStepper @ ^1.61
+2026-11-18 23:58:51,549:INFO:Downloading 0%
+2026-11-18 23:58:51,553:INFO: 10% 20% 30%
+2026-11-18 23:58:51,585:INFO:Unpacking 0%
+2026-11-18 23:58:51,595:INFO: 10%
+2026-11-18 23:58:51,605:INFO: 20%
+2026-11-18 23:58:51,611:INFO: 30%
+2026-11-18 23:58:51,626:INFO: 40%
+2026-11-18 23:58:51,632:INFO: 50%
+2026-11-18 23:58:51,644:INFO: 60%
+2026-11-18 23:58:51,652:INFO: 70%
+2026-11-18 23:58:51,658:INFO: 80%
+2026-11-18 23:58:51,664:INFO: 90%
+2026-11-18 23:58:51,670:INFO: 100%
+2026-11-18 23:58:51,671:INFO:
+2026-11-18 23:58:52,026:INFO:Library Manager: AccelStepper@1.64.0 has been installed!
+2026-11-18 23:58:52,038:INFO:Library Manager: Installing arduino-libraries/LiquidCrystal @ ^1.0.7
+2026-11-18 23:58:54,756:INFO:Downloading 0% 10%
+2026-11-18 23:58:54,821:INFO:Unpacking 0%
+2026-11-18 23:58:54,833:INFO: 10%
+2026-11-18 23:58:54,839:INFO: 20%
+2026-11-18 23:58:54,852:INFO: 30%
+2026-11-18 23:58:54,865:INFO: 40%
+2026-11-18 23:58:54,874:INFO: 50%
+2026-11-18 23:58:54,880:INFO: 60%
+2026-11-18 23:58:54,893:INFO: 70%
+2026-11-18 23:58:54,898:INFO: 80%
+2026-11-18 23:58:54,910:INFO: 90%
+2026-11-18 23:58:54,913:INFO: 100%
+2026-11-18 23:58:55,198:INFO:Library Manager: LiquidCrystal@1.0.7 has been installed!
+2026-11-18 23:58:55,210:INFO:Library Manager: Installing lincomatic/LiquidTWI2 @ ^1.2.7
+2026-11-18 23:58:58,002:INFO:Downloading 0%
+2026-11-18 23:58:58,004:INFO: 10% 20%
+2026-11-18 23:58:58,052:INFO:Unpacking 0%
+2026-11-18 23:58:58,059:INFO: 10%
+2026-11-18 23:58:58,063:INFO: 20%
+2026-11-18 23:58:58,075:INFO: 30%
+2026-11-18 23:58:58,080:INFO: 40%
+2026-11-18 23:58:58,090:INFO: 50%
+2026-11-18 23:58:58,096:INFO: 60%
+2026-11-18 23:58:58,100:INFO: 70%
+2026-11-18 23:58:58,109:INFO: 80%
+2026-11-18 23:58:58,118:INFO:
+2026-11-18 23:58:58,293:INFO:Library Manager: LiquidTWI2@1.2.7 has been installed!
+2026-11-18 23:58:58,325:INFO:Library Manager: Installing olikraus/U8g2 @ ^2.28.8
+2026-11-18 23:59:01,412:INFO:Downloading 0%
+2026-11-18 23:59:06,344:INFO: 10%
+2026-11-18 23:59:10,462:INFO: 20%
+2026-11-18 23:59:14,488:INFO: 30%
+2026-11-18 23:59:18,995:INFO: 40%
+2026-11-18 23:59:23,605:INFO: 50%
+2026-11-18 23:59:28,361:INFO: 60%
+2026-11-18 23:59:32,909:INFO: 70%
+2026-11-18 23:59:37,431:INFO: 80%
+2026-11-18 23:59:42,341:INFO: 90%
+2026-11-18 23:59:46,996:INFO: 100%
+2026-11-18 23:59:47,557:INFO:Unpacking 0%
+2026-11-18 23:59:47,668:INFO: 10%
+2026-11-18 23:59:47,769:INFO: 20%
+2026-11-18 23:59:47,877:INFO: 30%
+2026-11-18 23:59:47,984:INFO: 40%
+2026-11-18 23:59:48,556:INFO: 50%
+2026-11-18 23:59:48,620:INFO: 60%
+2026-11-18 23:59:48,689:INFO: 70%
+2026-11-18 23:59:48,761:INFO: 80%
+2026-11-18 23:59:48,841:INFO: 90%
+2026-11-18 23:59:48,921:INFO: 100%
+2026-11-18 23:59:52,906:INFO:Library Manager: U8g2@2.36.18 has been installed!
+2026-11-18 23:59:52,926:INFO:Library Manager: Installing git+https://github.com/ClutchplateDude/esp8266-oled-ssd1306#4.6.2
+2026-11-18 23:59:53,038:INFO:git version 2.49.0.windows.1
+2026-11-18 23:59:53,174:ERROR:Cloning into 'C:\Users\ClemNet\AppData\Local\Temp\.pioOATFWGUI2.1.1-release+591051\.cache\tmp\pkg-installing-nkbfmues'...
+2026-11-18 23:59:54,546:ERROR:Note: switching to '435128ac2f373111329b45a5404cb348d7b4e1c4'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-18 23:59:55,672:INFO:Library Manager: Could not parse manifest -> Expecting ',' delimiter: line 23 column 5 (char 622)
+2026-11-18 23:59:56,983:INFO:Library Manager: Could not parse manifest -> Expecting ',' delimiter: line 23 column 5 (char 622)
+2026-11-18 23:59:56,986:INFO:Library Manager: ESP8266 and ESP32 OLED driver for SSD1306 displays@4.6.2+sha.435128a has been installed!
+2026-11-18 23:59:56,988:INFO:Library Manager: Could not parse manifest -> Expecting ',' delimiter: line 23 column 5 (char 622)
+2026-11-18 23:59:56,997:INFO:Library Manager: Installing jdolinay/avr-debugger @ 1.2
+2026-11-19 00:00:00,935:INFO:Downloading 0% 10%
+2026-11-19 00:00:00,936:INFO: 20% 30%
+2026-11-19 00:00:01,186:INFO: 40%
+2026-11-19 00:00:01,189:INFO: 50% 60% 70%
+2026-11-19 00:00:01,239:INFO:Unpacking 0%
+2026-11-19 00:00:01,263:INFO: 10%
+2026-11-19 00:00:01,287:INFO: 20%
+2026-11-19 00:00:01,303:INFO: 30%
+2026-11-19 00:00:01,322:INFO: 40%
+2026-11-19 00:00:01,342:INFO: 50%
+2026-11-19 00:00:01,362:INFO: 60%
+2026-11-19 00:00:01,381:INFO: 70%
+2026-11-19 00:00:01,406:INFO: 80%
+2026-11-19 00:00:01,435:INFO: 90%
+2026-11-19 00:00:01,451:INFO: 100%
+2026-11-19 00:00:02,586:INFO:Library Manager: avr-debugger@1.2.0 has been installed!
+2026-11-19 00:00:02,608:INFO:Library Manager: Installing git+https://github.com/andre-stefanov/avr-interrupt-stepper#0.0.5
+2026-11-19 00:00:02,659:INFO:git version 2.49.0.windows.1
+2026-11-19 00:00:02,760:ERROR:Cloning into 'C:\Users\ClemNet\AppData\Local\Temp\.pioOATFWGUI2.1.1-release+591051\.cache\tmp\pkg-installing-_fyarqdi'...
+2026-11-19 00:00:03,844:ERROR:Note: switching to '4cfc723115223c1c5398a3960bebae932e9094e0'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+2026-11-19 00:00:06,099:INFO:Library Manager: InterruptStepper@0.0.4+sha.4cfc723 has been installed!
+2026-11-19 00:00:06,101:INFO:Library Manager: Resolving dependencies...
+2026-11-19 00:00:06,112:INFO:Library Manager: Installing etlcpp/Embedded Template Library @ 20.32.1
+2026-11-19 00:00:09,171:INFO:Downloading 0%
+2026-11-19 00:00:10,398:INFO: 10%
+2026-11-19 00:00:10,958:INFO: 20%
+2026-11-19 00:00:11,831:INFO: 30%
+2026-11-19 00:00:12,651:INFO: 40%
+2026-11-19 00:00:13,183:INFO: 50%
+2026-11-19 00:00:14,284:INFO: 60%
+2026-11-19 00:00:14,903:INFO: 70%
+2026-11-19 00:00:15,613:DEBUG:C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\.python_local\python.exe:State changed: Not running
+2026-11-19 00:00:15,614:INFO:platformio build finished
+2026-11-19 00:00:15,614:CRITICAL:Exception caught
+2026-11-19 00:00:15,615:CRITICAL:Traceback (most recent call last):
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\gui_logic.py", line 364, in pio_build_finished
+    exit_code = external_processes['platformio'].qproc.exitCode()
+RuntimeError: Internal C++ object (PySide6.QtCore.QProcess) already deleted.
+2026-11-19 00:00:15,615:CRITICAL:
+This is a bug! Please click the 'Report a bug' button in the bottom right of the window
+and attach the latest log file from the 'logs' directory (C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\logs)
+2026-11-19 00:00:15,616:CRITICAL:Exception caught
+2026-11-19 00:00:15,620:CRITICAL:Traceback (most recent call last):
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\qt_extensions.py", line 39, in run
+    raise e
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\qt_extensions.py", line 34, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\gui_logic.py", line 351, in build_fw
+    external_processes['platformio'].start(
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\external_processes.py", line 56, in start
+    self.cleanup()
+  File "C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\OATFWGUI\external_processes.py", line 59, in cleanup
+    log.debug(f'Cleaning up external process: {self.proc_name}. Exited with {self.qproc.exitCode()}')
+RuntimeError: Internal C++ object (PySide6.QtCore.QProcess) already deleted.
+2026-11-19 00:00:15,621:CRITICAL:
+This is a bug! Please click the 'Report a bug' button in the bottom right of the window
+and attach the latest log file from the 'logs' directory (C:\Users\ClemNet\Documents\GitHub\OpenAstroTracker\Firmware\OATFWGUI_2.1.1-release+591051_Windows\logs)

@@ -1,0 +1,16 @@
+.pio
+.vscode
+venv
+.venv
+__pycache__
+.idea
+cmake-*
+CMakeLists.txt
+CMakeListsPrivate.txt
+build_cache
+
+Configuration_local*
+MeadeToWikiOutput.txt
+
+# macOS
+**/.DS_Store

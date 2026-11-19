@@ -1,0 +1,16 @@
+The ASTAP, Astrometric stacking program installation is now completed. This message is available as astap_install.txt. 
+
+This program can view and stack astronomical images in the FITS format.
+
+In case you have problems you could post a question at the forum http://www.hnsky.org/forum/index.php
+
+Clear skies, Han Kleijn
+
+Copyright (C) 2018, 2019 by Han Kleijn, www.hnsky.org. Email: han.k.. at...hnsky.org
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details. You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+This setup program was made with free installer www.innosetup.com.
+ 
