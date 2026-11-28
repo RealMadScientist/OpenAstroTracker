@@ -1,5 +1,32 @@
 # Changelog
 
+## [1.14.1](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/compare/v1.14.0...v1.14.1) (2026-11-21)
+
+
+### Bug Fixes
+
+* Fix wrong AZ values for OAE ([#320](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/320)) ([aa3b686](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/aa3b686b9ae84d70a5fb5c4393196fc15c2b9454))
+* **mount:** Parked status, optional RA/DEC off when parked ([#323](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/323)) ([9be0002](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/9be0002751c88de28142e88ff2d0f015a6ef9a98))
+* **mount:** southern hemisphere tracking limit, manual E/W slews and :XGC/POI targets ([#332](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/332)) ([f47cbcb](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/f47cbcbab991efd153cc224d9b1bb852f5bffd93))
+* **mount:** Two fixes to RA tracking and the reported RA on OAT/OAM/OAE. ([#322](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/322)) ([63f88b3](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/63f88b3eed63d28e2a23aca2f0d5d7d0a47d5178))
+
+## [1.14.0](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/compare/v1.13.22...v1.14.0) (2026-11-05)
+
+
+### Features
+
+* **rp2040:** 5 kHz stepping, hardware info, SSD1306 display, CI coverage + TMC hold-current fix ([#309](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/309)) ([82b8592](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/82b859232eca8c0e999dcfd1449656cf02449bb5))
+* **rp2040:** add support for JackW01 and BTT SKR Pico boards ([#298](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/298)) ([2f77d61](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/2f77d61fb783f7b1142534da3fbf0d5867171d5e))
+
+
+### Bug Fixes
+
+* AZ ALT drivers staying energized on 0 length moves ([#311](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/311)) ([42d2982](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/42d29825285c1be1ff0f180c3afdc10055e0352e))
+* **build:** clear espressif32 8.0.0 -Werror blockers (buffer size, binary literals) ([#319](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/319)) ([be86480](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/be86480eec993f0505f6b687db9d0802bba3ffc2))
+* **guiding:** guide pulses dropped during active pulses + display render delaying pulse end ([#313](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/313)) ([3ad0c21](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/3ad0c21adb27becca56bda4d51da5998018e1e07))
+* **steppers:** honour negative speed in InterruptAccelStepper::setSpeed ([#318](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/318)) ([6c41f8d](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/6c41f8dd15b85d0e203bbfb7101f1da57b895859))
+* use UTC date for LST calculation ([#312](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/issues/312)) ([034b190](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/commit/034b1907eae935dd23615e60c4b3e57e96f7c1c8))
+
 ## [1.13.22](https://github.com/OpenAstroTech/OpenAstroTracker-Firmware/compare/v1.13.21...v1.13.22) (2026-10-05)
 
 

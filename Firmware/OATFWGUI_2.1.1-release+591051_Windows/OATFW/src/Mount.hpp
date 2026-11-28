@@ -88,39 +88,39 @@ class TMC2209Stepper;
 class HallSensorHoming;
 class EndSwitch;
 
-#define NORTH          B00000001
-#define EAST           B00000010
-#define SOUTH          B00000100
-#define WEST           B00001000
-#define ALL_DIRECTIONS B00001111
-#define TRACKING       B00010000
-#define FOCUSING       B00100000
+#define NORTH          0b00000001
+#define EAST           0b00000010
+#define SOUTH          0b00000100
+#define WEST           0b00001000
+#define ALL_DIRECTIONS 0b00001111
+#define TRACKING       0b00010000
+#define FOCUSING       0b00100000
 
-#define LCDMENU_STRING     B0001
-#define MEADE_STRING       B0010
-#define PRINT_STRING       B0011
-#define LCD_STRING         B0100
-#define COMPACT_STRING     B0101
-#define FORMAT_STRING_MASK B0111
+#define LCDMENU_STRING     0b0001
+#define MEADE_STRING       0b0010
+#define PRINT_STRING       0b0011
+#define LCD_STRING         0b0100
+#define COMPACT_STRING     0b0101
+#define FORMAT_STRING_MASK 0b0111
 
-#define TARGET_STRING  B01000
-#define CURRENT_STRING B10000
+#define TARGET_STRING  0b01000
+#define CURRENT_STRING 0b10000
 
 //mountstatus
-#define STATUS_PARKED            0B0000000000000000
-#define STATUS_SLEWING           0B0000000000000010
-#define STATUS_SLEWING_TO_TARGET 0B0000000000000100
-#define STATUS_SLEWING_FREE      0B0000000000000010
-#define STATUS_SLEWING_MANUAL    0B0000000100000000
-#define STATUS_TRACKING          0B0000000000001000
-#define STATUS_PARKING           0B0000000000010000
-#define STATUS_PARKING_POS       0B0001000000000000
-#define STATUS_GUIDE_PULSE       0B0000000010000000
-#define STATUS_GUIDE_PULSE_DIR   0B0000000001100000
-#define STATUS_GUIDE_PULSE_RA    0B0000000001000000
-#define STATUS_GUIDE_PULSE_DEC   0B0000000000100000
-#define STATUS_GUIDE_PULSE_MASK  0B0000000011100000
-#define STATUS_FINDING_HOME      0B0010000000000000
+#define STATUS_PARKED            0b0000000000000001  // At the park position, nothing moving. setStatusFlag() clears it.
+#define STATUS_SLEWING           0b0000000000000010
+#define STATUS_SLEWING_TO_TARGET 0b0000000000000100
+#define STATUS_SLEWING_FREE      0b0000000000000010
+#define STATUS_SLEWING_MANUAL    0b0000000100000000
+#define STATUS_TRACKING          0b0000000000001000
+#define STATUS_PARKING           0b0000000000010000
+#define STATUS_PARKING_POS       0b0001000000000000
+#define STATUS_GUIDE_PULSE       0b0000000010000000
+#define STATUS_GUIDE_PULSE_DIR   0b0000000001100000
+#define STATUS_GUIDE_PULSE_RA    0b0000000001000000
+#define STATUS_GUIDE_PULSE_DEC   0b0000000000100000
+#define STATUS_GUIDE_PULSE_MASK  0b0000000011100000
+#define STATUS_FINDING_HOME      0b0010000000000000
 
 struct LocalDate {
     int year;
@@ -312,6 +312,7 @@ class Mount
     bool isSlewingRAorDEC() const;
     bool isSlewingIdle() const;
     bool isSlewingTRK() const;
+    bool isTracking() const;
     bool isParking() const;
     bool isGuiding() const;
     bool isFindingHome() const;
@@ -397,6 +398,8 @@ class Mount
     void setStatus(int state);
     void setStatusFlag(int flag);
     void clearStatusFlag(int flag);
+    void leaveParkedState();
+    void enterParkedState();
 
     // Get the current speed of the stepper. NORTH, WEST, TRACKING
     float getSpeed(int direction);
@@ -540,6 +543,14 @@ class Mount
 
     void autoCalcHa();
 
+    // The RA of RA stepper position zero right now: _zeroPosRA moved on by the time tracking was off.
+    DayTime zeroPosRA() const;
+
+    // The catch-up move of TRK after a slew (non-blocking, see Mount.cpp)
+    void startTrackerCatchUp();
+    void endTrackerCatchUp();
+    void finishTrackerCatchUp();
+
   private:
     LcdMenu *_lcdMenu;
 #if (INFO_DISPLAY_TYPE != INFO_DISPLAY_TYPE_NONE)
@@ -668,6 +679,11 @@ class Mount
     unsigned long _lastDisplayUpdate;
     unsigned long _trackerStoppedAt;
     bool _compensateForTrackerOff;
+    volatile bool _trackerCatchingUp;  // TRK is running the catch-up move after a slew. Read by interruptLoop()
+    long _catchUpStartPos;             // TRK position when the catch-up started
+    bool _trackAfterSlew;              // Start tracking when the slew ends. A full stop clears it
+    unsigned long _trackingOffSince;   // millis() when tracking was last switched off. Only used while not tracking
+    float _untrackedHours;             // Completed tracking-off time (hours) since the last setHome()/setLST()
     volatile int _mountStatus;
 
     char scratchBuffer[24];

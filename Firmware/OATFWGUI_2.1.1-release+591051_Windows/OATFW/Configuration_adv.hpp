@@ -1,9 +1,9 @@
 #pragma once
 
 /**
- * This file contains advanced configurations. Edit values here only if you know what you are doing. Invalid values
- * can lead to OAT misbehaving very bad and in worst case could even lead to hardware damage. The default values here
- * were chosen after many tests and can are currently concidered to work the best.
+ * This file contains advanced configurations. Edit values here only if you know what you are doing. Invalid values can
+ * lead to the OpenAstroTech mount misbehaving very bad and in worst case could even lead to hardware damage. The 
+ * default values here were chosen after many tests and are currently considered to work the best.
  * 
  * 
  *         YOU SHOULD NOT NEED TO EDIT THIS FILE!
@@ -35,6 +35,19 @@
 //                            ////////
 // MOTOR & DRIVER SETTINGS    ////////
 //                            ////////
+//////////////////////////////////////
+//
+// Interval at which the stepper control timer/interrupt services the steppers.
+// Shorter intervals mean finer step timing. AVR is capped at 2 kHz: higher rates
+// there interfere with serial communications. The RP2040 has ample headroom.
+#ifndef STEPPER_CONTROL_INTERVAL_MS
+    #if defined(ARDUINO_ARCH_RP2040)
+        #define STEPPER_CONTROL_INTERVAL_MS 0.2f  // 5 kHz
+    #else
+        #define STEPPER_CONTROL_INTERVAL_MS 0.5f  // 2 kHz
+    #endif
+#endif
+
 //////////////////////////////////////
 //
 // This is how many steps your stepper needs for a full rotation.
@@ -270,6 +283,15 @@
 
 ////////////////////////////
 //
+// PARKING
+// Set to 1 to switch the RA and DEC drivers off while the mount is parked. They switch back on when anything moves.
+// Only for OAM and OAE: their gearboxes hold the axes without power. An OAT loses its position.
+#ifndef RA_DEC_OFF_WHEN_PARKED
+    #define RA_DEC_OFF_WHEN_PARKED 0
+#endif
+
+////////////////////////////
+//
 // INVERT AXIS
 // Set to 1 or 0 to invert motor directions
 #ifndef RA_INVERT_DIR
@@ -345,9 +367,9 @@
     #ifndef AZ_CIRCUMFERENCE
         #ifdef OAE
             // Roughly from the joint to the rod placement is 70mm
-            #define AZ_CIRCUMFERENCE 56.0f * 2 * PI
+            #define AZ_CIRCUMFERENCE 57.0f * 2 * PI
             #ifndef AZ_ROD_PITCH
-                #define AZ_ROD_PITCH 0.5
+                #define AZ_ROD_PITCH 0.8
             #endif
             #define AZIMUTH_STEPS_PER_REV                                                                                                  \
                 +(AZ_CORRECTION_FACTOR * (AZ_CIRCUMFERENCE / AZ_ROD_PITCH) * AZ_STEPPER_SPR * AZ_MICROSTEPPING)  // Actually u-steps/rev
@@ -556,16 +578,15 @@
 // Enable RA End Switches in your local configuration. Do not edit here!
 #ifndef USE_RA_END_SWITCH
     #define USE_RA_END_SWITCH 0
-#else
-    #ifndef RA_END_SWITCH_ACTIVE_STATE
-        #define RA_END_SWITCH_ACTIVE_STATE LOW
-    #endif
-    // You can define how many degrees to slew back after the end switch has triggered.
-    // Mechanical end switches might have a hysteresis behavior, meaning once signaled,
-    // it needs to move well back beyond the signal point to become un-signaled.
-    #ifndef RA_ENDSWITCH_BACKSLEW_DEG
-        #define RA_ENDSWITCH_BACKSLEW_DEG 0.5
-    #endif
+#endif
+#ifndef RA_END_SWITCH_ACTIVE_STATE
+    #define RA_END_SWITCH_ACTIVE_STATE LOW
+#endif
+// You can define how many degrees to slew back after the end switch has triggered.
+// Mechanical end switches might have a hysteresis behavior, meaning once signaled,
+// it needs to move well back beyond the signal point to become un-signaled.
+#ifndef RA_ENDSWITCH_BACKSLEW_DEG
+    #define RA_ENDSWITCH_BACKSLEW_DEG 0.5
 #endif
 
 //////////////////////////////////////////
@@ -574,17 +595,15 @@
 // Enable DEC End Switches in your local configuration. Do not edit here!
 #ifndef USE_DEC_END_SWITCH
     #define USE_DEC_END_SWITCH 0
-#else
-    #ifndef DEC_END_SWITCH_ACTIVE_STATE
-        #define DEC_END_SWITCH_ACTIVE_STATE LOW
-    #endif
-    // You can define how many degrees to slew back after the end switch has triggered.
-    // Mechanical end switches might have a hysteresis behavior, meaning once signaled,
-    // it needs to move well back beyond the signal point to become un-signaled.
-    #ifndef DEC_ENDSWITCH_BACKSLEW_DEG
-        #define DEC_ENDSWITCH_BACKSLEW_DEG 0.5
-    #endif
-
+#endif
+#ifndef DEC_END_SWITCH_ACTIVE_STATE
+    #define DEC_END_SWITCH_ACTIVE_STATE LOW
+#endif
+// You can define how many degrees to slew back after the end switch has triggered.
+// Mechanical end switches might have a hysteresis behavior, meaning once signaled,
+// it needs to move well back beyond the signal point to become un-signaled.
+#ifndef DEC_ENDSWITCH_BACKSLEW_DEG
+    #define DEC_ENDSWITCH_BACKSLEW_DEG 0.5
 #endif
 
 //////////////////////////////////////////
@@ -690,9 +709,9 @@
 //  4  DEBUG_MOUNT_VERBOSE  Verbose mount processing (coordinates, etc)
 //  5  DEBUG_GENERAL        Other misc. output
 //  6  DEBUG_MEADE          Meade command handling output
-// Set this to specify the amount of debug output OAT should send to the serial port.
-// Note that if you use an app to control OAT, ANY debug output will likely confuse that app.
-// Debug output is useful if you are using Wifi to control the OAT or if you are issuing
+// Set this to specify the amount of debug output the OpenAstroTech mount should send to the serial port.
+// Note that if you use an app to control the OpenAstroTech mount, ANY debug output will likely confuse that app.
+// Debug output is useful if you are using Wifi to control the OpenAstroTech mount or if you are issuing
 // manual commands via a terminal only.
 //
 #ifndef DEBUG_LEVEL

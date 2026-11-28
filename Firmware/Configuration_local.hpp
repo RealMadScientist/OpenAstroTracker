@@ -3,7 +3,7 @@
 // and is for firmware to be used on a OpenAstroTracker.
 // Save this as Configuration_local.hpp in the folder where you placed the firmware code.
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Unique ConfigKey: TR:OAT,FWT:L,HS:S,SL:N,BD:M21,RST:N8,RDO:TU,RATP2000:O40:A3000:V1800:S32:T256:,RTR:N,RT:1,DS:N8,DDT:TU,DATP2000:O40:A3000:V1800:S32:T256:,DT:1,DLIN90:D45:,STL:N,DY:LCD,GP:N,LM:N,FC:N,APT:N,RAH:N
+// Unique ConfigKey: TR:OAT,FWT:L,HS:S,SL:N,BD:M21,RST:N8,RDO:TU,RATP2000:O40:A3000:V1800:S32:T256:,RTR:N,RT:1,DS:N8,DDT:TU,DATP2000:O40:A3000:V1800:S32:T256:,DT:1,DLIN90:D45:,STL:N,DY:LCD,GP:Y,LM:N,FC:N,APT:N,RAH:N
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -102,8 +102,8 @@
 
 ////////////////////////////////
 // GPS Addon configuration 
-// Define whether we have the GPS addon or not. Currently: No GPS
-#define USE_GPS 0
+// Define whether we have the GPS addon or not. Currently: GPS NEO-6M
+#define USE_GPS 1
 
 ////////////////////////////////
 // Digital Level Addon configuration 
